@@ -89,7 +89,7 @@ root {
   width: 33px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url(../images/icon1-min.png);
+  background-image: url("./images/icon1-min.png");
 }
 
 .second::before {
@@ -98,7 +98,7 @@ root {
   width: 50px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url(../images/icon2-min.png);
+  background-image: url("./images/icon2-min.png");
 }
 
 .third::before {
@@ -107,6 +107,24 @@ root {
   width: 44px;
   height: 50px;
   margin-bottom: 16px;
-  background-image: url(../images/icon3-min.png);
+  background-image: url("./images/icon3-min.png");
+}
+
+.gallery {
+  max-width: 100%;
+  display: block;
+  height: 122px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(60%, #fff));
+  background-image: linear-gradient(#fff5f6 40%, #fff 60%);
+}
+
+.gallery__container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery__container {
+    width: 480px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
