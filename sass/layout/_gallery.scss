@@ -1,19 +1,11 @@
-.gallery {
+    .gallery {
     max-width: 100%;
     display: block;
     height: 122px;
-    $background_galley_section: #fff5f6;
-
+    $background_gallery_section: #fff5f6;
     &__container {
         margin: 0 auto;
-                @media screen and (min-width: 480px) {
-            width: 480px;} }
-    &--overlay {
-        background-image: url("./images/compr480/Transparent-gallery-1x-min.png");
-        background-size: 364px 122px;
-         @media (min-device-pixel-ratio: 2),
-         (-webkit-min-device-pixel-ratio: 2),
-         screen and (min-width: 480px) and (min-resolution: 192dpi),
-         screen and (min-width: 480px) and (min-resolution: 2dppx) {
-             background-image: url("./images/compr480/Transparent-gallery-2x-min.png");}}
-         }
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    }
