@@ -1,1 +1,20 @@
-
+.customer-reviews {
+    padding-top: 80px;
+    &__photo {
+        margin: 0px auto 29px;
+    }
+    &__text {
+        width: 157px;
+        height: 239px;
+        left: 77px;
+        top: 4648px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 255%;
+        /* or 31px */
+        text-align: center;
+        color: #000000;
+    }
+}
