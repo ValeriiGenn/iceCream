@@ -159,7 +159,7 @@ root {
   display: inline-block;
   width: 54px;
   height: 40px;
-  background-image: url(/images/icon-comma.svg);
+  background-image: url(../images/icon-comma.svg);
 }
 
 .customer-reviews__text {
