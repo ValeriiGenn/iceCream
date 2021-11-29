@@ -29,4 +29,7 @@
         color: #000000;
         background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
     }
+    &__user-icon {
+        display: flex;
+    }
 }

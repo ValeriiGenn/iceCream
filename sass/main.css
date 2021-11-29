@@ -171,4 +171,10 @@ root {
   color: #000000;
   background-image: repeating-linear-gradient(180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
 }
+
+.customer-reviews__user-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
