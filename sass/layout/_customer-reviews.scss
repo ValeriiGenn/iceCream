@@ -3,18 +3,30 @@
     &__photo {
         margin: 0px auto 29px;
     }
+    &__signature {
+        position: relative;
+        padding: 43px 50px 20px;
+        z-index: -2;
+        background-color: #fafafa;
+    }
+    &__signature::before {
+        position: absolute;
+        top: 28px;
+        left: 61px;
+        z-index: -1;
+        content: "";
+        display: inline-block;
+        width: 54px;
+        height: 40px;
+        background-image: url(/images/koma1.svg);
+    }
     &__text {
-        width: 157px;
-        height: 239px;
-        left: 77px;
-        top: 4648px;
         font-family: DM Sans;
-        font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 255%;
-        /* or 31px */
         text-align: center;
         color: #000000;
+        background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
     }
 }
