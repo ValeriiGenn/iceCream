@@ -12,13 +12,14 @@
     &__signature::before {
         position: absolute;
         top: 28px;
-        left: 61px;
+        left: 40px;
         z-index: -1;
         content: "";
         display: inline-block;
         width: 54px;
         height: 40px;
-        background-image: url(/images/koma1.svg);
+        background-image: url(/images/icon-comma.svg);
+        border: solid 1px red;
     }
     &__text {
         font-family: DM Sans;
