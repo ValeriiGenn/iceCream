@@ -29,7 +29,23 @@
         color: #000000;
         background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
     }
-    &__user-icon {
+    &__user {
+        text-align: center;
+    }
+    &__user--icon {
         display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__user--icon-item:not(:last-child) {
+        margin-right: 18px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 18px;
+    }
+    &__content--item:not(:last-child) {
+        margin-right: 10px;
     }
 }
