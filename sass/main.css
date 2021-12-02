@@ -222,6 +222,7 @@ root {
 }
 
 .contacts__list--item {
+  padding: 41px 20px 42px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -237,9 +238,9 @@ root {
 
 .contacts__list--item-cafe {
   width: 80px;
-  height: 16px;
+  height: 22px;
   top: 41px;
-  left: 44px;
+  left: 20px;
   background: #f0d1a5;
   border-radius: 4px;
   font-weight: 500;
@@ -251,6 +252,60 @@ root {
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+.contacts__city--name {
+  margin-bottom: 10px;
+  width: 57px;
+  height: 22px;
+  left: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.contacts__city--description {
+  margin-bottom: 50px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+}
+
+.contacts__timetable {
+  margin-bottom: 50px;
+}
+
+.contacts__timetable--work-day {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000000;
+}
+
+.contacts__timetable--work-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ffa5ba;
+}
+
+.contacts__contact {
+  margin-bottom: 42px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  color: #907e82;
 }
 
 .contacts__list--item:not(:last-child) {
