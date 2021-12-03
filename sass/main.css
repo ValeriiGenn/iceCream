@@ -218,7 +218,8 @@ root {
   height: 100%;
   padding-top: 85px;
   padding-bottom: 113px;
-  background: linear-gradient(180deg, #ffffff 85px, #fff5f6);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ffffff), color-stop(10%, #fff5f6), color-stop(90%, #fff5f6));
+  background-image: linear-gradient(180deg, #ffffff 10%, #fff5f6 10%, #fff5f6 90%);
 }
 
 .contacts__list--item {
