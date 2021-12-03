@@ -218,7 +218,7 @@ root {
   height: 100%;
   padding-top: 85px;
   padding-bottom: 113px;
-  background: #fff5f6;
+  background: linear-gradient(180deg, #ffffff 85px, #fff5f6);
 }
 
 .contacts__list--item {
@@ -239,8 +239,6 @@ root {
 .contacts__list--item-cafe {
   width: 80px;
   height: 22px;
-  top: 41px;
-  left: 20px;
   background: #f0d1a5;
   border-radius: 4px;
   font-weight: 500;
@@ -269,16 +267,17 @@ root {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
 
 .contacts__city--name {
   margin-bottom: 10px;
-  width: 57px;
+  min-width: 57px;
   height: 22px;
-  left: 20px;
   margin-top: 20px;
   font-weight: 500;
   font-size: 12px;
