@@ -222,7 +222,7 @@ root {
 }
 
 .contacts__list--item {
-  padding: 41px 20px 42px;
+  padding: 41px 21px 42px 20px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -246,6 +246,26 @@ root {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.contacts__item--food {
+  width: 130px;
+  height: 16px;
+  background: #c2e297;
+  border-radius: 4px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
