@@ -1,0 +1,29 @@
+.footer {
+  background: #fff5f6;
+
+  &__made {
+    font-family: Titan One;
+
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    color: #ffa5ba;
+  }
+  &__passion {
+    font-family: Titan One;
+
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
+  &__network {
+    display: flex;
+  }
+  &__network--item:not(:last-child) {
+    margin-right: 28px;
+  }
+}

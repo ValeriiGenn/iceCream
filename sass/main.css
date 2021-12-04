@@ -391,4 +391,35 @@ root {
   margin-left: 13.17px;
   stroke: #d41342;
 }
+
+.footer {
+  background: #fff5f6;
+}
+
+.footer__made {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.footer__passion {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.footer__network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__network--item:not(:last-child) {
+  margin-right: 28px;
+}
 /*# sourceMappingURL=main.css.map */
