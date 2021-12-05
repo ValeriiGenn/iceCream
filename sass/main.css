@@ -286,7 +286,7 @@ root {
 }
 
 .contacts__city--description {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -296,7 +296,10 @@ root {
 }
 
 .contacts__timetable {
-  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .contacts__timetable--work-day {
@@ -316,6 +319,7 @@ root {
 }
 
 .contacts__contact {
+  margin-top: 25px;
   margin-bottom: 42px;
   font-family: DM Sans;
   font-style: normal;
@@ -404,7 +408,7 @@ root {
 }
 
 .footer__pre-title--span {
-  text-align: start;
+  display: block;
 }
 
 .footer__title {
@@ -448,5 +452,21 @@ root {
   line-height: 1, 86em;
   text-align: right;
   color: #d41443;
+}
+
+.footer__copyrigt {
+  margin-top: 22px;
+  margin-bottom: 25px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+}
+
+.footer__copyrigt--span {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

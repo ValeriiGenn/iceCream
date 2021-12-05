@@ -1,161 +1,159 @@
 .contacts {
-  width: 100%;
-  height: 100%;
-  padding-top: 85px;
-  padding-bottom: 113px;
-  background-image: linear-gradient(
-    180deg,
-    #ffffff 10%,
-    #fff5f6 10%,
-    #fff5f6 90%
-  );
-  &__list--item {
-    padding: 41px 21px 42px 20px;
-    // position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-    width: 220px;
-    height: 427px;
-    background: #ffffff;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-  }
-  &__list--item-cafe {
-    //position: absolute;
-    width: 80px;
-    height: 22px;
-    //top: 41px;
-    //@extend: 20px;
-    background: #f0d1a5;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-  }
-  &__item--food {
-    width: 130px;
-    height: 16px;
-    background: #c2e297;
-    border-radius: 4px;
-
-    font-size: 12px;
-    line-height: 186%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-  }
-  &__city--name {
-    //position: absolute;
-    margin-bottom: 10px;
-    min-width: 57px;
-    height: 22px;
-
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-    letter-spacing: 0.04em;
-    color: #000000;
-  }
-  &__city--description {
-    margin-bottom: 50px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #907e82;
-  }
-  &__timetable {
-    margin-bottom: 50px;
-  }
-  &__timetable--work-day {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-    color: #000000;
-  }
-  &__timetable--work-time {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 186%;
-    color: #ffa5ba;
-  }
-  &__contact {
-    margin-bottom: 42px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    /* or 150% */
-    color: #907e82;
-  }
-  //&__contact--phone {}
-  //&__contact--mail {}
-  &__list--item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  &__filter {
-    margin-top: 54px;
-  }
-  &__button {
-    height: 44px;
-    min-width: 161.5px;
-    border-radius: 22px;
-    text-align: center;
-    //align-items: center;
-    //justify-content: center;
-    // margin-right: auto;
-    //margin-left: auto;
-    // display: flex;
-    align-items: center;
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.313;
-  }
-  &__btn--locations {
-    display: flex;
-    padding: 12px 20px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    background-color: #d41342;
-    border: none;
-  }
-  //&__btn--loc-text {}
-  &__btn--loc-icon {
-    margin-left: 11px;
-    //border: 2px solid #ffffff;
-  }
-  &__btn--franchise {
-    display: flex;
-    padding: 9px 32px;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    /*align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 85px;
+    padding-bottom: 113px;
+    background-image: linear-gradient( 180deg, #ffffff 10%, #fff5f6 10%, #fff5f6 90%);
+    &__list--item {
+        padding: 41px 21px 42px 20px;
+        // position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        width: 220px;
+        height: 427px;
+        background: #ffffff;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+    &__list--item-cafe {
+        //position: absolute;
+        width: 80px;
+        height: 22px;
+        //top: 41px;
+        //@extend: 20px;
+        background: #f0d1a5;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+    }
+    &__item--food {
+        width: 130px;
+        height: 16px;
+        background: #c2e297;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 186%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+    }
+    &__city--name {
+        //position: absolute;
+        margin-bottom: 10px;
+        min-width: 57px;
+        height: 22px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+    &__city--description {
+        margin-bottom: 25px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #907e82;
+    }
+    &__timetable {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    &__timetable--work-day {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #000000;
+    }
+    &__timetable--work-time {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #ffa5ba;
+        //border-bottom: 1px solid #e1e1e1;
+    }
+    &__contact {
+        margin-top: 25px;
+        margin-bottom: 42px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+        color: #907e82;
+    }
+    //&__contact--phone {}
+    //&__contact--mail {}
+    &__list--item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__filter {
+        margin-top: 54px;
+    }
+    &__button {
+        height: 44px;
+        min-width: 161.5px;
+        border-radius: 22px;
+        text-align: center;
+        //align-items: center;
+        //justify-content: center;
+        // margin-right: auto;
+        //margin-left: auto;
+        // display: flex;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.313;
+    }
+    &__btn--locations {
+        display: flex;
+        padding: 12px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background-color: #d41342;
+        border: none;
+    }
+    //&__btn--loc-text {}
+    &__btn--loc-icon {
+        margin-left: 11px;
+        //border: 2px solid #ffffff;
+    }
+    &__btn--franchise {
+        display: flex;
+        padding: 9px 32px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        /*align-items: center;
         text-align: center;*/
-    color: #d41443;
-    background-color: #fff;
-    border: none;
-  }
-  &__btn--fran-icon {
-    margin-left: 13.17px;
-    stroke: #d41342;
-  }
+        color: #d41443;
+        background-color: #fff;
+        border: none;
+    }
+    &__btn--fran-icon {
+        margin-left: 13.17px;
+        stroke: #d41342;
+    }
 }
