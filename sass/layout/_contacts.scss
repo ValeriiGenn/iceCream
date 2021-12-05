@@ -88,6 +88,17 @@
         //border-bottom: 1px solid #e1e1e1;
     }
     &__contact {
+        /* margin-top: 25px;
+        margin-bottom: 42px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+       
+        color: #907e82;*/
+    }
+    &__contact--link {
         margin-top: 25px;
         margin-bottom: 42px;
         font-family: DM Sans;
@@ -95,10 +106,8 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        /* or 150% */
         color: #907e82;
     }
-    //&__contact--phone {}
     //&__contact--mail {}
     &__list--item:not(:last-child) {
         margin-bottom: 20px;
