@@ -1,7 +1,8 @@
 .footer {
   background: #fff5f6;
 
-  &__made {
+  &__pre-title {
+    margin-bottom: 17px;
     font-family: Titan One;
 
     font-size: 18px;
@@ -10,7 +11,11 @@
 
     color: #ffa5ba;
   }
-  &__passion {
+  &__pre-title--span {
+    text-align: start;
+  }
+  &__title {
+    margin-bottom: 43px;
     font-family: Titan One;
 
     font-size: 34px;
@@ -22,8 +27,33 @@
   }
   &__network {
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: 43px;
   }
   &__network--item:not(:last-child) {
     margin-right: 28px;
+  }
+  &__contact {
+    margin-bottom: 43px;
+    font-family: DM Sans;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 186%;
+
+    text-align: right;
+
+    color: #000000;
+  }
+  &__contact-tel {
+    font-family: DM Sans;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1, 86em;
+
+    text-align: right;
+
+    color: #d41443;
   }
 }

@@ -258,8 +258,6 @@ root {
   height: 16px;
   background: #c2e297;
   border-radius: 4px;
-  font-family: DM Sans;
-  font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   display: -webkit-box;
@@ -396,7 +394,8 @@ root {
   background: #fff5f6;
 }
 
-.footer__made {
+.footer__pre-title {
+  margin-bottom: 17px;
   font-family: Titan One;
   font-size: 18px;
   line-height: 21px;
@@ -404,7 +403,12 @@ root {
   color: #ffa5ba;
 }
 
-.footer__passion {
+.footer__pre-title--span {
+  text-align: start;
+}
+
+.footer__title {
+  margin-bottom: 43px;
   font-family: Titan One;
   font-size: 34px;
   line-height: 39px;
@@ -417,9 +421,32 @@ root {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 43px;
 }
 
 .footer__network--item:not(:last-child) {
   margin-right: 28px;
+}
+
+.footer__contact {
+  margin-bottom: 43px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000000;
+}
+
+.footer__contact-tel {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1, 86em;
+  text-align: right;
+  color: #d41443;
 }
 /*# sourceMappingURL=main.css.map */
