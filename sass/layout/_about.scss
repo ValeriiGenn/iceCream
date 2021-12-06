@@ -8,6 +8,9 @@
     background-position: 0 91%;
     padding-top: 125px;
     padding-bottom: 20px;
+    &__container {
+        margin-left: 30px;
+    }
     &__title {
         font-family: Titan One;
         font-size: 18px;
@@ -27,7 +30,9 @@
         color: #d41443;
         margin-bottom: 26px;
     }
-    //&__picture {  }
+    &__content {
+        margin-right: 50px;
+    }
     &__signature {
         font-family: DM Sans;
         font-weight: 500;
@@ -45,17 +50,26 @@
         color: #907e82;
     }
     &__button {
+        display: inline-block;
+        text-align: center;
         min-width: 176px;
         height: 44px;
         background: #ffffff;
         border-radius: 22px;
-        padding: 9px 32px;
-        margin-top: 10px;
+        padding: 7px 14px;
+        margin-left: 20px;
+        margin-top: 17px;
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
         color: #d41443;
         background-color: #fff;
         border: none;
+    }
+    &__btn--icon {
+        margin-left: 13px;
+        display: inline-block;
+        width: 7px;
+        height: 10px;
     }
 }

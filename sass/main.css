@@ -66,6 +66,10 @@ root {
   padding-bottom: 20px;
 }
 
+.about__container {
+  margin-left: 30px;
+}
+
 .about__title {
   font-family: Titan One;
   font-size: 18px;
@@ -87,6 +91,10 @@ root {
   margin-bottom: 26px;
 }
 
+.about__content {
+  margin-right: 50px;
+}
+
 .about__signature {
   font-family: DM Sans;
   font-weight: 500;
@@ -106,18 +114,28 @@ root {
 }
 
 .about__button {
+  display: inline-block;
+  text-align: center;
   min-width: 176px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
-  padding: 9px 32px;
-  margin-top: 10px;
+  padding: 7px 14px;
+  margin-left: 20px;
+  margin-top: 17px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   color: #d41443;
   background-color: #fff;
   border: none;
+}
+
+.about__btn--icon {
+  margin-left: 13px;
+  display: inline-block;
+  width: 7px;
+  height: 10px;
 }
 
 .advantages {
@@ -437,6 +455,7 @@ root {
   display: -ms-flexbox;
   display: flex;
   padding: 12px 20px;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -451,6 +470,10 @@ root {
 
 .contacts__btn--loc-icon {
   margin-left: 11px;
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  margin-bottom: -1px;
 }
 
 .contacts__btn--franchise {
@@ -459,6 +482,7 @@ root {
   display: flex;
   padding: 9px 32px;
   margin-top: 10px;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -468,8 +492,11 @@ root {
 }
 
 .contacts__btn--fran-icon {
-  margin-left: 13.17px;
-  stroke: #d41342;
+  margin-left: 13px;
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  margin-bottom: -1px;
 }
 
 .footer {

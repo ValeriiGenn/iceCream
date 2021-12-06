@@ -133,6 +133,7 @@
     &__btn--locations {
         display: flex;
         padding: 12px 20px;
+        font-family: sans-serif;
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
@@ -145,12 +146,16 @@
     //&__btn--loc-text {}
     &__btn--loc-icon {
         margin-left: 11px;
-        //border: 2px solid #ffffff;
+        display: inline-block;
+        width: 7px;
+        height: 10px;
+        margin-bottom: -1px;
     }
     &__btn--franchise {
         display: flex;
         padding: 9px 32px;
         margin-top: 10px;
+        font-family: sans-serif;
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
@@ -159,7 +164,10 @@
         border: none;
     }
     &__btn--fran-icon {
-        margin-left: 13.17px;
-        stroke: #d41342;
+        margin-left: 13px;
+        display: inline-block;
+        width: 7px;
+        height: 10px;
+        margin-bottom: -1px;
     }
 }
