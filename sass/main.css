@@ -106,6 +106,9 @@ root {
 }
 
 .about__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-width: 176px;
   height: 44px;
   background: #ffffff;
