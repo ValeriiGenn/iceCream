@@ -31,20 +31,22 @@
         margin-right: 28px;
     }
     &__contact {
+        min-width: 230px;
+        height: 22px;
         margin-bottom: 65px;
-        font-family: DM Sans;
-        font-weight: bold;
+        font-family: DM Sans, sans-serif;
+        font-weight: 700;
         font-size: 12px;
         line-height: 186%;
         text-align: right;
         color: #000000;
     }
     &__contact-tel {
-        font-family: DM Sans;
+        /*font-family: DM Sans;
         font-weight: bold;
         font-size: 12px;
         line-height: 186%;
-        text-align: right;
+        text-align: right;*/
         color: #d41443;
         text-decoration: none;
     }

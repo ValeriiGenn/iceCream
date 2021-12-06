@@ -4,16 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet" />
+    <title>IceCream</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./sass/main.css" />
 </head>
 
 <body>
     <main>
+        <!--секція про -->
+        <section class="about">
+            <h2 class="visually-hidden">About</h2>
+            <div class="container about__container">
+                <h3 class="about__title">
+                    tradition and love
+                </h3>
+                <p class="about__preview">how it’s made?</p>
+                <div class="about__content">
+                    <picture class="about__picture">
+                        <img src="./images/compr480/cow-milk-1x-min.png" alt="cow-milk">
+                    </picture>
+                    <p class="about__signature">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                    <p class="about__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat.
+                        Aenean accumsan.</p>
+                </div>
+                <button class="button about__button" type="button">Read more <svg><use href="./images/simbol-defs.svg#icon-Vectored"></use></svg></button>
+
+            </div>
+        </section>
         <!--секція- переваги-->
         <section class="advantages">
             <h2 class="visually-hidden">Advantages</h2>
@@ -42,8 +64,9 @@
         </section>
         <!--секція- галерея-->
         <section class="gallery">
+            <h2 class="visually-hidden">Gallery</h2>
             <div class="container gallery__container">
-                <h2 class="visually-hidden">Gallery</h2>
+
                 <div class="gallery__flex">
                     <picture class="gallery__picture">
                         <sourse srcset="/images/compr480/Transparent-gallery-1x-min.png" media="(min-width: 320px)" />
@@ -54,8 +77,9 @@
         </section>
         <!--секція - відгуки покупців-->
         <section class="customer-reviews">
+            <h2 class="visually-hidden">Customer reviews</h2>
             <div class="container customer-reviews__container">
-                <h2 class="visually-hidden">Customer reviews</h2>
+
 
                 <img class="customer-reviews__photo" src="./images/compr480/testimonials1-1x-min.png" alt="woman" />
 
@@ -102,8 +126,9 @@
             </div>
         </section>
         <section class="contacts">
+            <h2 class="visually-hidden">Contacts</h2>
             <div class="container contacts__container">
-                <h2 class="visually-hidden">Contacts</h2>
+
                 <ul class="contacts__list">
                     <li class="contacts__list--item">
                         <p class="contacts__list--item-cafe">CAFE</p>

@@ -71,9 +71,10 @@
         padding-bottom: 25px;
         border-top: 1px solid #e1e1e1;
         border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 25px;
     }
     &__timetable--work-day {
-        font-family: DM Sans;
+        font-family: DM Sans, sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -94,9 +95,8 @@
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        line-height: 18px;
-       
-        color: #907e82;*/
+        line-height: 18px;*/
+        color: #907e82;
     }
     &__contact--link {
         margin-top: 25px;
@@ -108,7 +108,6 @@
         line-height: 18px;
         color: #907e82;
     }
-    //&__contact--mail {}
     &__list--item:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -155,8 +154,6 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
-        /*align-items: center;
-        text-align: center;*/
         color: #d41443;
         background-color: #fff;
         border: none;
