@@ -15,17 +15,17 @@
             display: inline-block;
             position: absolute;
             width: 346px;
-            height: 346px;
+            height: 344px;
             right: -19%;
             bottom: 75px;
             z-index: -1;
             background-image: url(../images/Ellherom.svg);
-            //background-size: 346px;
             background-repeat: no-repeat;
         }
         &::after {
             content: "";
             position: absolute;
+            z-index: -1;
             width: 171px;
             height: 410px;
             right: 12px;
@@ -34,7 +34,47 @@
             background-repeat: no-repeat;
         }
     }
-    &__wrap {
-        display: none;
+    &__title {
+        font-family: Titan One;
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #ffffff;
+        &--first {
+            font-family: Titan One;
+            font-size: 34px;
+            line-height: 90.5%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #d41443;
+        }
     }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 137px;
+    }
+    &__filter--list {
+        display: flex;
+    }
+    &__button--red {
+        min-width: 62.4px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #d41443;
+        color: #ffffff;
+    }
+}
+
+&__wrap {
+    display: none;
 }

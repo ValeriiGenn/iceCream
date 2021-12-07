@@ -75,7 +75,7 @@ root {
   display: inline-block;
   position: absolute;
   width: 346px;
-  height: 346px;
+  height: 344px;
   right: -19%;
   bottom: 75px;
   z-index: -1;
@@ -86,12 +86,72 @@ root {
 .hero-header__container::after {
   content: "";
   position: absolute;
+  z-index: -1;
   width: 171px;
   height: 410px;
   right: 12px;
   bottom: 0;
   background-image: url(../images/compr480/ice-burger-1x-min.png);
   background-repeat: no-repeat;
+}
+
+.hero-header__title {
+  font-family: Titan One;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-header__title--first {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 90.5%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.hero-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 137px;
+}
+
+.hero-header__filter--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-header__button {
+  min-width: 62.4px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero-header__button--red {
+  background-color: #d41443;
+  color: #ffffff;
 }
 
 .hero-header__wrap {
