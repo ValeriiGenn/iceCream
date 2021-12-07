@@ -111,7 +111,7 @@ root {
   position: absolute;
   top: 173px;
   left: 36px;
-  background-image: url(/images/compr480/ice-cream-1x-min.png);
+  background-image: url(../images/compr480/ice-cream-1x-min.png);
 }
 
 .products__item--coffee {
@@ -126,7 +126,7 @@ root {
   position: absolute;
   top: 780px;
   left: 36px;
-  background-image: url(/images/compr480/ice-coffee-1x-min.png);
+  background-image: url(../images/compr480/ice-coffee-1x-min.png);
 }
 
 .products__item--milk {
@@ -141,7 +141,7 @@ root {
   position: absolute;
   top: 1390px;
   left: 36px;
-  background-image: url(/images/compr480/milkshakes-1x-min.png);
+  background-image: url(../images/compr480/milkshakes-1x-min.png);
 }
 
 .products__item:not(:last-child) {
