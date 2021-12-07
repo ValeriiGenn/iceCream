@@ -5,7 +5,7 @@
     background-image: url(/images/compr480/sectionbg1-1x-min.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 91%;
+    background-position: 0 87%;
     &__container {
         margin-left: 30px;
     }
@@ -38,7 +38,7 @@
         line-height: 162%;
         color: #000000;
         margin-top: 46px;
-        margin-bottom: 47px;
+        margin-bottom: 40px;
     }
     &__text {
         font-family: DM Sans;
@@ -46,6 +46,12 @@
         font-size: 12px;
         line-height: 162%;
         color: #907e82;
+        &--first {
+            margin-bottom: 12px;
+        }
+        &--second {
+            margin-bottom: 17px;
+        }
     }
     &__button {
         display: inline-block;
