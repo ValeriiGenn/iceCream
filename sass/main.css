@@ -59,6 +59,134 @@ root {
   padding-bottom: 98px;
 }
 
+.products__slogan {
+  margin-bottom: 114px;
+}
+
+.products__slogan--first {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.products__slogan--second {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.products__item {
+  min-width: 280px;
+  border-radius: 24px;
+  padding: 161px 41px 41px 41px;
+}
+
+.products__item--title {
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.products__item--cream {
+  background-color: #ffb8ca;
+}
+
+.products__item--cream::before {
+  content: "";
+  display: inline-block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: 173px;
+  left: 36px;
+  background-image: url(/images/compr480/ice-cream-1x-min.png);
+}
+
+.products__item--coffee {
+  background: #f0d1a5;
+}
+
+.products__item--coffee::before {
+  content: "";
+  display: inline-block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: 780px;
+  left: 36px;
+  background-image: url(/images/compr480/ice-coffee-1x-min.png);
+}
+
+.products__item--milk {
+  background: #c2e297;
+}
+
+.products__item--milk::before {
+  content: "";
+  display: inline-block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: 1390px;
+  left: 36px;
+  background-image: url(/images/compr480/milkshakes-1x-min.png);
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.products__item--icon {
+  margin: 0 auto 30px;
+}
+
+.products__item--text {
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.products__item--button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+}
+
+.products__item--button-icon {
+  width: 15px;
+  height: 15px;
+  fill: #d41443;
+}
+
 .about {
   padding-top: 125px;
   padding-bottom: 39px;

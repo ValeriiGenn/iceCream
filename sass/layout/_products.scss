@@ -2,6 +2,114 @@
     padding-top: 112px;
     padding-bottom: 98px;
     &__slogan {
-        &__first {}
+        margin-bottom: 114px;
+        &--first {
+            font-family: Titan One;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffa5ba;
+        }
+        &--second {
+            font-family: Titan One;
+            font-size: 34px;
+            line-height: 39px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #d41443;
+        }
+    }
+    &__item {
+        //position: relative;
+        min-width: 280px;
+        //min-height: 485px;
+        border-radius: 24px;
+        padding: 161px 41px 41px 41px;
+        &--title {
+            font-family: Titan One;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        &--cream {
+            background-color: #ffb8ca;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 249px;
+                height: 252px;
+                position: absolute;
+                top: 173px;
+                left: 36px;
+                background-image: url(/images/compr480/ice-cream-1x-min.png);
+                //background-size: contain;
+                //background-repeat: no-repeat;
+                //background-position: 0 0;
+            }
+        }
+        &--coffee {
+            background: #f0d1a5;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 249px;
+                height: 252px;
+                position: absolute;
+                top: 780px;
+                left: 36px;
+                background-image: url(/images/compr480/ice-coffee-1x-min.png);
+            }
+        }
+        &--milk {
+            background: #c2e297;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 249px;
+                height: 252px;
+                position: absolute;
+                top: 1390px;
+                left: 36px;
+                background-image: url(/images/compr480/milkshakes-1x-min.png);
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 120px;
+        }
+        &--icon {
+            margin: 0 auto 30px;
+        }
+        &--text {
+            margin-bottom: 30px;
+            font-family: DM Sans;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 152%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+        }
+        &--button {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: #fff;
+        }
+        &--button-icon {
+            width: 15px;
+            height: 15px;
+            fill: #d41443;
+        }
     }
 }
