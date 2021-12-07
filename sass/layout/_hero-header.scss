@@ -34,6 +34,9 @@
             background-repeat: no-repeat;
         }
     }
+    &__wrapper-wrap {
+        margin-bottom: 19px;
+    }
     &__title {
         font-family: Titan One;
         font-size: 22px;
@@ -69,12 +72,23 @@
         line-height: 10px;
         display: flex;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         background-color: #d41443;
         color: #ffffff;
+        margin-right: 8px;
     }
-}
-
-&__wrap {
-    display: none;
+    &__button--white {
+        min-width: 82.8px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #d41443;
+    }
 }

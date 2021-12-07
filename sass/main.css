@@ -95,6 +95,10 @@ root {
   background-repeat: no-repeat;
 }
 
+.hero-header__wrapper-wrap {
+  margin-bottom: 19px;
+}
+
 .hero-header__title {
   font-family: Titan One;
   font-size: 22px;
@@ -132,10 +136,10 @@ root {
   display: flex;
 }
 
-.hero-header__button {
+.hero-header__button--red {
   min-width: 62.4px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 12px;
   border: none;
   font-family: DM Sans;
   font-size: 8px;
@@ -146,16 +150,33 @@ root {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-}
-
-.hero-header__button--red {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #d41443;
   color: #ffffff;
+  margin-right: 8px;
 }
 
-.hero-header__wrap {
-  display: none;
+.hero-header__button--white {
+  min-width: 82.8px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  color: #d41443;
 }
 
 .products {
