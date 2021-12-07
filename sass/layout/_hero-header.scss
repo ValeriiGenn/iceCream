@@ -1,0 +1,40 @@
+.hero-header {
+    background-color: #ffb8ca;
+    background-size: 346px;
+    background-repeat: no-repeat;
+    padding-top: 6px;
+    height: 502px;
+    position: relative;
+    overflow: hidden;
+    &__container {
+        position: relative;
+        z-index: 0;
+        height: 100%;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 346px;
+            height: 346px;
+            right: -19%;
+            bottom: 75px;
+            z-index: -1;
+            background-image: url(../images/Ellherom.svg);
+            //background-size: 346px;
+            background-repeat: no-repeat;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 171px;
+            height: 410px;
+            right: 12px;
+            bottom: 0;
+            background-image: url(../images/compr480/ice-burger-1x-min.png);
+            background-repeat: no-repeat;
+        }
+    }
+    &__wrap {
+        display: none;
+    }
+}
