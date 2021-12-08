@@ -23,6 +23,14 @@ svg {
   display: block;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
 root {
   --bg-color: rgba(255, 245, 246, 1);
   --cntnt-color: rgba(212, 20, 67, 1);
@@ -179,137 +187,139 @@ root {
   color: #d41443;
 }
 
-.products {
-  padding-top: 112px;
-  padding-bottom: 98px;
+@media screen and (max-width: 767px) {
+  .products {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 121px;
+    padding-bottom: 98px;
+    text-align: center;
+  }
+  .products__slogan {
+    margin-bottom: 114px;
+  }
+  .products__slogan--first {
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+  }
+  .products__slogan--second {
+    font-family: Titan One;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
 }
 
-.products__slogan {
-  margin-bottom: 114px;
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .products__list {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
-.products__slogan--first {
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-
-.products__slogan--second {
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-}
-
-.products__item {
-  min-width: 280px;
-  border-radius: 24px;
-  padding: 161px 41px 41px 41px;
-}
-
-.products__item--title {
-  font-family: Titan One;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.products__item--cream {
-  background-color: #ffb8ca;
-}
-
-.products__item--cream::before {
-  content: "";
-  display: inline-block;
-  width: 249px;
-  height: 252px;
-  position: absolute;
-  top: 675px;
-  left: 36px;
-  background-image: url(../images/compr480/ice-cream-1x-min.png);
-}
-
-.products__item--coffee {
-  background: #f0d1a5;
-}
-
-.products__item--coffee::before {
-  content: "";
-  display: inline-block;
-  width: 249px;
-  height: 252px;
-  position: absolute;
-  top: 1283px;
-  left: 36px;
-  background-image: url(../images/compr480/ice-coffee-1x-min.png);
-}
-
-.products__item--milk {
-  background: #c2e297;
-}
-
-.products__item--milk::before {
-  content: "";
-  display: inline-block;
-  width: 249px;
-  height: 252px;
-  position: absolute;
-  top: 1892px;
-  left: 36px;
-  background-image: url(../images/compr480/milkshakes-1x-min.png);
-}
-
-.products__item:not(:last-child) {
-  margin-bottom: 120px;
-}
-
-.products__item--icon {
-  margin: 0 auto 30px;
-}
-
-.products__item--text {
-  margin-bottom: 30px;
-  font-family: DM Sans;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 152%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
-.products__item--button {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  background-color: #fff;
-}
-
-.products__item--button-icon {
-  width: 15px;
-  height: 15px;
-  fill: #d41443;
+@media screen and (max-width: 767px) {
+  .products__item {
+    margin: 0 auto;
+    border-radius: 24px;
+    min-width: 280px;
+    border-radius: 24px;
+    padding: 161px 39px 41px 41px;
+  }
+  .products__item--title {
+    font-family: Titan One;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  .products__item--cream {
+    background-color: #ffb8ca;
+  }
+  .products__item--cream::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    position: absolute;
+    top: -119px;
+    left: 16px;
+    background-image: url(../images/compr480/ice-cream-1x-min.png);
+  }
+  .products__item--coffee {
+    background: #f0d1a5;
+  }
+  .products__item--coffee::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    position: absolute;
+    top: 495px;
+    left: 16px;
+    background-image: url(../images/compr480/ice-coffee-1x-min.png);
+  }
+  .products__item--milk {
+    background: #c2e297;
+  }
+  .products__item--milk::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    position: absolute;
+    top: 1103px;
+    left: 16px;
+    background-image: url(../images/compr480/milkshakes-1x-min.png);
+  }
+  .products__item:not(:last-child) {
+    margin-bottom: 120px;
+  }
+  .products__item--icon {
+    margin: 0 auto 30px;
+  }
+  .products__item--text {
+    margin-bottom: 30px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  .products__item--button {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+  }
+  .products__item--button-icon {
+    width: 15px;
+    height: 15px;
+    fill: #d41443;
+  }
 }
 
 .about {
