@@ -19,7 +19,8 @@ a {
 }
 
 img,
-svg {
+svg,
+div {
   display: block;
 }
 
