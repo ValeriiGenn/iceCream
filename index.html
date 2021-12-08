@@ -21,11 +21,18 @@
                 <a href="./index.html" class="hero-header__nav--logo">
                     <img src="./images/logo.png" alt="logo" />
                 </a>
-                <a href="" class="hero__header--link mobile-menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="20px" height="12px" class="hero__header--link-icon">
-              <use href="./images/symbol-defs.svg#icon-Burgm"></use>
+                <button type="button" class="hero-header__btn mobile-menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg
+              width="20"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="mobile-menu__button--open-icon"
+                href="./images/symbol-defs.svg#icon-Burgm"
+              ></use>
             </svg>
-                </a>
+          </button>
             </nav>
             <div class="hero-header__wrapper-wrap">
                 <p class="hero-header__title">
@@ -429,12 +436,13 @@
       </div>
     </footer>
     <!--мобільне меню-->
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
       <button
         class="mobile-menu__button--close js-close-menu"
         type="button"
         aria-expanded="false"
-        aria-controls="mobile-menu">
+        aria-controls="mobile-menu"
+      >
         <svg width="14" height="14" aria-label="Переключатель мобильного меню">
           <use
             class="nav__icon-close"
@@ -442,7 +450,21 @@
           ></use>
         </svg>
       </button>
-
+      <div class="mobile-menu__container">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu-nav__list list">
+            <li class="mobile-menu-nav__item"></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <!--<script src="./index.js " type="module "></script>-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
