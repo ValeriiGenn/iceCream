@@ -35,11 +35,10 @@
             border-radius: 50%;
             // background-color: #fea5bb;
         }
-        /*&--link-icon {
-            //@at-root: 19px;
-            //height: 19px;
-            //fill: #fff
-        }*/
+        &--link-icon {
+            stroke: #d41443;
+            fill: #fff;
+        }
     }
     &__network--item:not(:last-child) {
         margin-right: 28px;
