@@ -810,6 +810,10 @@ root {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 43px;
+  /*&--link-icon {
+            stroke: #d41443;
+            fill: red;
+        }*/
 }
 
 .footer__network--link {
@@ -823,11 +827,6 @@ root {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-}
-
-.footer__network--link-icon {
-  stroke: #d41443;
-  fill: red;
 }
 
 .footer__network--item:not(:last-child) {
