@@ -813,13 +813,21 @@ root {
 }
 
 .footer__network--link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
 }
 
 .footer__network--link-icon {
   stroke: #d41443;
-  fill: #fff;
+  fill: red;
 }
 
 .footer__network--item:not(:last-child) {
