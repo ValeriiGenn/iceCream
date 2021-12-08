@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./sass/main.css" />
@@ -19,30 +19,36 @@
         <div class="container hero-header__container">
             <nav class="hero-header__nav">
                 <a href="./index.html" class="hero-header__nav--logo">
-                    <img src="./images/logo.png" alt="logo">
+                    <img src="./images/logo.png" alt="logo" />
                 </a>
                 <a href="" class="hero__header--link mobile-menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width=20px height=12px class="hero__header--link-icon"><use href="./images/symbol-defs.svg#icon-Burgm"></use></svg>
+                    <svg width="20px" height="12px" class="hero__header--link-icon">
+              <use href="./images/symbol-defs.svg#icon-Burgm"></use>
+            </svg>
                 </a>
             </nav>
             <div class="hero-header__wrapper-wrap">
-                <p class="hero-header__title">ice cream<br/> made with
+                <p class="hero-header__title">
+                    ice cream<br /> made with
                 </p>
                 <p class="hero-header__title--first">passion</p>
             </div>
             <div class="hero-header__filter">
                 <ul class="hero-header__filter--list">
-                    <li> <button class="button hero-header__button--red">Products</button></li>
-                    <li> <button class="button hero-header__button--white">How it’s made?</button></li>
+                    <li>
+                        <button class="button hero-header__button--red">Products</button>
+                    </li>
+                    <li>
+                        <button class="button hero-header__button--white">
+                How it’s made?
+              </button>
+                    </li>
                 </ul>
             </div>
-
-
         </div>
         <div class="is-hidden mobail-menu"></div>
     </header>
     <main>
-
         <!--секція продукція-->
         <section class="products">
             <h2 class="visually-hidden">Products</h2>
@@ -54,73 +60,110 @@
                 <ul class="products__list">
                     <li class="products__item products__item--cream">
                         <h3 class="products__item--title">ice cream</h3>
-                        <svg class="products__item--icon" width=26px height=6px>
-                            <use href="./images/symbol-defs.svg#icon-ellWitm"></use></svg>
-                        <p class="products__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                        <button class=" button products__item--button" type="button"><svg class="products__item--button-icon" width=40px height=40px><use href="./images/symbol-defs.svg#icon-arrow-right2"></use></svg></button>
+                        <svg class="products__item--icon" width="26px" height="6px">
+                <use href="./images/symbol-defs.svg#icon-ellWitm"></use>
+              </svg>
+                        <p class="products__item--text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+                        </p>
+                        <button class="button products__item--button">
+                <svg
+                  class="products__item--button-icon"
+                  width="40px"
+                  height="40px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+                </svg>
+              </button>
                     </li>
-                    <li class="products__item products__item--coffee ">
-                        <h3 class="products__item--title ">ice coffee</h3>
-                        <svg class="products__item--icon " width=26px height=6px>
-                            <use href="./images/symbol-defs.svg#icon-ellWitm "></use></svg>
-                        <p class="products__item--text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                        <button class=" button products__item--button" type="button"><svg class="products__item--button-icon" width=40px height=40px><use href="./images/symbol-defs.svg#icon-arrow-right2"></use></svg></button>
+                    <li class="products__item products__item--coffee">
+                        <h3 class="products__item--title">ice coffee</h3>
+                        <svg class="products__item--icon" width="26px" height="6px">
+                <use href="./images/symbol-defs.svg#icon-ellWitm "></use>
+              </svg>
+                        <p class="products__item--text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+                        </p>
+                        <button class="button products__item--button">
+                <svg
+                  class="products__item--button-icon"
+                  width="40px"
+                  height="40px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+                </svg>
+              </button>
                     </li>
                     <li class="products__item products__item--milk">
                         <h3 class="products__item--title">milkshakes</h3>
-                        <svg class="products__item--icon" width=26px height=6px>
-                            <use href="./images/symbol-defs.svg#icon-ellWitm"></use></svg>
-                        <p class="products__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                        <button class=" button products__item--button" type="button"><svg class="products__item--button-icon" width=40px height=40px><use href="./images/symbol-defs.svg#icon-arrow-right2"></use></svg></button>
+                        <svg class="products__item--icon" width="26px" height="6px">
+                <use href="./images/symbol-defs.svg#icon-ellWitm"></use>
+              </svg>
+                        <p class="products__item--text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+                        </p>
+                        <button class="button products__item--button">
+                <svg
+                  class="products__item--button-icon"
+                  width="40px"
+                  height="40px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+                </svg>
+              </button>
                     </li>
                 </ul>
             </div>
         </section>
         <!--секція про -->
-        <section class="about ">
-            <h2 class="visually-hidden ">About</h2>
-            <div class="container about__container ">
-                <h3 class="about__title ">
-                    tradition and love
-                </h3>
-                <p class="about__preview ">how it’s made?</p>
-                <div class="about__content ">
-                    <picture class="about__picture ">
-                        <img src="./images/compr480/cow-milk-1x-min.png " alt="cow-milk ">
+        <section class="about">
+            <h2 class="visually-hidden">About</h2>
+            <div class="container about__container">
+                <h3 class="about__title">tradition and love</h3>
+                <p class="about__preview">how it’s made?</p>
+                <div class="about__content">
+                    <picture class="about__picture">
+                        <img src="./images/compr480/cow-milk-1x-min.png " alt="cow-milk " />
                     </picture>
-                    <p class="about__signature ">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-                    <p class="about__text about__text--first ">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-                    <p class="about__text about__text--second ">
+                    <p class="about__signature">
+                        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                    </p>
+                    <p class="about__text about__text--first">
+                        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                    </p>
+                    <p class="about__text about__text--second">
                         Aliquam erat volutpat. Aenean accumsan.
                     </p>
                 </div>
 
-                <button class="button about__button " type="button ">Read more <svg class="about__btn--icon " width=5px height=8px><use href="./images/symbol-defs.svg#icon-Vectored "></use></svg></button>
-
-
-
+                <button class="button about__button">
+            Read more
+            <svg class="about__btn--icon" width="5px" height="8px">
+              <use href="./images/symbol-defs.svg#icon-Vectored "></use>
+            </svg>
+          </button>
             </div>
         </section>
         <!--секція- переваги-->
-        <section class="advantages ">
-            <h2 class="visually-hidden ">Advantages</h2>
-            <div class="advantages__container ">
-                <ul class="advantages__list list ">
-                    <li class="advantages__item first ">
-                        <h3 class="advantages__content ">721</h3>
-                        <p class="advantages__signature ">
+        <section class="advantages">
+            <h2 class="visually-hidden">Advantages</h2>
+            <div class="advantages__container">
+                <ul class="advantages__list list">
+                    <li class="advantages__item first">
+                        <h3 class="advantages__content">721</h3>
+                        <p class="advantages__signature">
                             Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
                         </p>
                     </li>
-                    <li class="advantages__item second ">
-                        <h3 class="advantages__content ">16kg</h3>
-                        <p class="advantages__signature ">
+                    <li class="advantages__item second">
+                        <h3 class="advantages__content">16kg</h3>
+                        <p class="advantages__signature">
                             Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
                         </p>
                     </li>
-                    <li class="advantages__item third ">
-                        <h3 class="advantages__content ">84</h3>
-                        <p class="advantages__signature ">
+                    <li class="advantages__item third">
+                        <h3 class="advantages__content">84</h3>
+                        <p class="advantages__signature">
                             Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
                         </p>
                     </li>
@@ -128,61 +171,68 @@
             </div>
         </section>
         <!--секція- галерея-->
-        <section class="gallery ">
-            <h2 class="visually-hidden ">Gallery</h2>
-            <div class="container gallery__container ">
+        <section class="gallery">
+            <h2 class="visually-hidden">Gallery</h2>
+            <div class="container gallery__container">
+                <div class="gallery__flex">
+                    <picture class="gallery__picture">
+                        <source srcset="
+                  ./images/compr1200/Transparent-gallery-1x-min.png 1x,
+                  ./images/compr1200/Transparent-gallery-1x-min.png 2x
+                " media="(min-width: 1200px)" />
+                        <source srcset="
+                  ./images/compr768/Transparent-gallery-1x-min.png 1x,
+                  ./images/compr768/Transparent-gallery-1x-min.png 2x
+                " media="(min-width: 768px)" />
 
-                <div class="gallery__flex ">
-                    <picture class="gallery__picture ">
-                        <sourse srcset="/images/compr480/Transparent-gallery-1x-min.png " media="(min-width: 320px) " />
+                        <sourse srcset="./images/compr480/Transparent-gallery-1x-min.png 1x,
+                         ./images/compr480/Transparent-gallery-2x-min.png 2x" media="(min-width: 320px) " />
                         <img src="./images/compr480/Transparent-gallery-1x-min.png " alt="gallery " />
                     </picture>
                 </div>
             </div>
         </section>
         <!--секція - відгуки покупців-->
-        <section class="customer-reviews ">
-            <h2 class="visually-hidden ">Customer reviews</h2>
-            <div class="container customer-reviews__container ">
+        <section class="customer-reviews">
+            <h2 class="visually-hidden">Customer reviews</h2>
+            <div class="container customer-reviews__container">
+                <img class="customer-reviews__photo" src="./images/compr480/testimonials1-1x-min.png " alt="woman " />
 
-
-                <img class="customer-reviews__photo " src="./images/compr480/testimonials1-1x-min.png " alt="woman " />
-
-                <div class="customer-reviews__signature ">
-                    <p class="customer-reviews__text ">
+                <div class="customer-reviews__signature">
+                    <p class="customer-reviews__text">
                         Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
                     </p>
                 </div>
-                <ul class="customer-reviews__content ">
-                    <li class="customer-reviews__content--item ">
+                <ul class="customer-reviews__content">
+                    <li class="customer-reviews__content--item">
                         <svg width="4px " height="4px ">
                 <use href="./images/symbol-defs.svg#icon-Ellipse456 "></use>
               </svg>
                     </li>
-                    <li class="customer-reviews__content--item ">
+                    <li class="customer-reviews__content--item">
                         <svg width="4px " height="4px ">
                 <use href="./images/symbol-defs.svg#icon-Ellipse456 "></use>
               </svg>
                     </li>
-                    <li class="customer-reviews__content--item ">
+                    <li class="customer-reviews__content--item">
                         <svg width="4px " height="4px ">
                 <use href="./images/symbol-defs.svg#icon-Ellipse456 "></use>
               </svg>
                     </li>
                 </ul>
-                <p class="customer-reviews__user ">Emily, Los Angeles</p>
-                <ul class="customer-reviews__user--icon ">
-                    <li class="customer-reviews__user--icon-item ">
+                <p class="customer-reviews__user">Emily, Los Angeles</p>
+                <ul class="customer-reviews__user--icon">
+                    <li class="customer-reviews__user--icon-item">
                         <svg width="12.4px " height="11.84px ">
                 <use href="./images/symbol-defs.svg#icon-dom-1 "></use>
               </svg>
                     </li>
-                    <li class="customer-reviews__user--icon-item ">
+                    <li class="customer-reviews__user--icon-item">
                         <svg width="12px " height="12px ">
                 <use href="./images/symbol-defs.svg#icon-Ellipse-1 "></use>
               </svg>
                     </li>
-                    <li class="customer-reviews__user--icon-item ">
+                    <li class="customer-reviews__user--icon-item">
                         <svg width="12px " height="12px ">
                 <use href="./images/symbol-defs.svg#icon-Ellipse-1 "></use>
               </svg>
@@ -190,158 +240,191 @@
                 </ul>
             </div>
         </section>
-        <section class="contacts ">
-            <h2 class="visually-hidden ">Contacts</h2>
-            <div class="container contacts__container ">
+        <section class="contacts">
+            <h2 class="visually-hidden">Contacts</h2>
+            <div class="container contacts__container">
+                <ul class="contacts__list">
+                    <li class="contacts__list--item">
+                        <p class="contacts__list--item-cafe">CAFE</p>
 
-                <ul class="contacts__list ">
-                    <li class="contacts__list--item ">
-                        <p class="contacts__list--item-cafe ">CAFE</p>
-
-                        <p class="contacts__city--name ">Chicago</p>
-                        <p class="contacts__city--description ">
+                        <p class="contacts__city--name">Chicago</p>
+                        <p class="contacts__city--description">
                             Fusce ut velit laoreet, tempus arcu molestie vulputate
                         </p>
 
-                        <ul class="contacts__timetable ">
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Monday - Friday</p>
-                                <p class="contacts__timetable--work-time ">
+                        <ul class="contacts__timetable">
+                            <li class="contacts__timetable--work">
+                                <p class="contacts__timetable--work-day">Monday - Friday</p>
+                                <p class="contacts__timetable--work-time">
                                     06:00 AM - 10:00 PM
                                 </p>
                             </li>
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Saturday - Sunday</p>
-                                <p class="contacts__timetable--work-time ">
+                            <li class="contacts__timetable--work">
+                                <p class="contacts__timetable--work-day">Saturday - Sunday</p>
+                                <p class="contacts__timetable--work-time">
                                     08:00 AM - 16:00 PM
                                 </p>
                             </li>
                         </ul>
-                        <ul class="contacts__contact ">
-                            <li class="contacts__contact--phone ">
-                                <a class="contacts__contact--link " href="tel:+610383766284 ">+61(0) 383 766 284</a></li>
-                            <li class="contacts__contact--mail ">
-                                <a class="contacts__contact--link " href="mailto:noreply@envato.com ">noreply@envato.com</a></li>
-                        </ul>
-                    </li>
-                    <li class="contacts__list--item ">
-                        <p class="contacts__item--food ">FOODTRUCK</p>
+                        <ul class="contacts__contact">
+                            <li class="contacts__contact--phone">
+                                <a class="contacts__contact--link" href="tel:+610383766284 ">+61(0) 383 766 284</a
+                  >
+                </li>
+                <li class="contacts__contact--mail">
+                  <a
+                    class="contacts__contact--link"
+                    href="mailto:noreply@envato.com "
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__list--item">
+              <p class="contacts__item--food">FOODTRUCK</p>
 
-                        <p class="contacts__city--name ">Los Angeles</p>
-                        <p class="contacts__city--description ">
-                            Fusce ut velit laoreet, tempus arcu molestie vulputate
-                        </p>
+              <p class="contacts__city--name">Los Angeles</p>
+              <p class="contacts__city--description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
 
-                        <ul class="contacts__timetable ">
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Monday - Friday</p>
-                                <p class="contacts__timetable--work-time ">
-                                    06:00 AM - 10:00 PM
-                                </p>
-                            </li>
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Saturday - Sunday</p>
-                                <p class="contacts__timetable--work-time ">
-                                    08:00 AM - 16:00 PM
-                                </p>
-                            </li>
-                        </ul>
-                        <ul class="contacts__contact ">
-                            <li class="contacts__contact--phone ">
-                                <a class="contacts__contact--link " href="tel:+610383766284 ">+61(0) 383 766 284</a></li>
-                            <li class="contacts__contact--mail ">
-                                <a class="contacts__contact--link " href="mailto:noreply@envato.com ">noreply@envato.com</a></li>
-                        </ul>
-                    </li>
-                    <li class="contacts__list--item ">
-                        <p class="contacts__list--item-cafe ">CAFE</p>
+              <ul class="contacts__timetable">
+                <li class="contacts__timetable--work">
+                  <p class="contacts__timetable--work-day">Monday - Friday</p>
+                  <p class="contacts__timetable--work-time">
+                    06:00 AM - 10:00 PM
+                  </p>
+                </li>
+                <li class="contacts__timetable--work">
+                  <p class="contacts__timetable--work-day">Saturday - Sunday</p>
+                  <p class="contacts__timetable--work-time">
+                    08:00 AM - 16:00 PM
+                  </p>
+                </li>
+              </ul>
+              <ul class="contacts__contact">
+                <li class="contacts__contact--phone">
+                  <a class="contacts__contact--link" href="tel:+610383766284 "
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li class="contacts__contact--mail">
+                  <a
+                    class="contacts__contact--link"
+                    href="mailto:noreply@envato.com "
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="contacts__list--item">
+              <p class="contacts__list--item-cafe">CAFE</p>
 
-                        <p class="contacts__city--name ">New York</p>
-                        <p class="contacts__city--description ">
-                            Fusce ut velit laoreet, tempus arcu molestie vulputate
-                        </p>
+              <p class="contacts__city--name">New York</p>
+              <p class="contacts__city--description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
 
-                        <ul class="contacts__timetable ">
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Monday - Friday</p>
-                                <p class="contacts__timetable--work-time ">
-                                    06:00 AM - 10:00 PM
-                                </p>
-                            </li>
-                            <li class="contacts__timetable--work ">
-                                <p class="contacts__timetable--work-day ">Saturday - Sunday</p>
-                                <p class="contacts__timetable--work-time ">
-                                    08:00 AM - 16:00 PM
-                                </p>
-                            </li>
-                        </ul>
-                        <ul class="contacts__contact ">
-                            <li class="contacts__contact--phone ">
-                                <a class="contacts__contact--link " href="tel:+610383766284 ">+61(0) 383 766 284
-                            </a></li>
-                            <li class="contacts__contact--mail "><a class="contacts__contact--link " href="mailto:noreply@envato.com ">noreply@envato.com</li>
-                        </a></ul>
-                        </li>
-                </ul>
-                <ul class="contacts__filter ">
-                    <li>
-                        <button class="contacts__button contacts__btn--locations " type="button ">
-                Our Locations<svg class="contacts__btn--loc-icon " width="5px" height="8px">
-                  <use href="./images/symbol-defs.svg#icon-Vector1 "></use></svg>
+              <ul class="contacts__timetable">
+                <li class="contacts__timetable--work">
+                  <p class="contacts__timetable--work-day">Monday - Friday</p>
+                  <p class="contacts__timetable--work-time">
+                    06:00 AM - 10:00 PM
+                  </p>
+                </li>
+                <li class="contacts__timetable--work">
+                  <p class="contacts__timetable--work-day">Saturday - Sunday</p>
+                  <p class="contacts__timetable--work-time">
+                    08:00 AM - 16:00 PM
+                  </p>
+                </li>
+              </ul>
+              <ul class="contacts__contact">
+                <li class="contacts__contact--phone">
+                  <a class="contacts__contact--link" href="tel:+610383766284 "
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li class="contacts__contact--mail">
+                  <a
+                    class="contacts__contact--link"
+                    href="mailto:noreply@envato.com "
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="contacts__filter">
+            <li>
+              <button class="contacts__button contacts__btn--locations">
+                Our Locations<svg
+                  class="contacts__btn--loc-icon"
+                  width="5px"
+                  height="8px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-Vector1 "></use>
+                </svg>
               </button>
-                    </li>
-                    <li>
-                        <button class="contacts__button contacts__btn--franchise" type="button">
-                Franchise<svg class="contacts__btn--fran-icon "width="5px" height="8px">
+            </li>
+            <li>
+              <button class="contacts__button contacts__btn--franchise">
+                Franchise
+                <svg class="contacts__btn--fran-icon" width="5px" height="8px">
                   <use href="./images/symbol-defs.svg#icon-Vectored "></use>
                 </svg>
               </button>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer ">
-        <div class="container footer__container ">
-            <p class="footer__pre-title ">
-                homemade ice cream <span class="footer__pre-title--span "> made</span>
-            </p>
-            <p class="footer__title ">
-                with <br /> passion
-            </p>
-            <div class="footer__box">
-                <ul class="footer__network ">
-                    <li class="footer__network--item ">
-                        <a class="footer__network--link " href="https://github.com ">
-                            <svg width=32px height=32px class="footer__network--link-icon">
-                <use href="./images/symbol-defs.svg#icon-git "></use>
-              </svg>
-                        </a>
-                    </li>
-                    <li class="footer__network--item ">
-                        <a class="footer__network--link " href="https://web.telegram.org ">
-                            <svg width=32px height=32px class="footer__network--link-icon">
-                <use href="./images/symbol-defs.svg#icon-teleg"></use>
-              </svg>
-                        </a>
-                    </li>
-                    <li class="footer__network--item ">
-                        <a class="footer__network--link " href="https://www.facebook.com ">
-                            <svg width=32px height=32px class="footer__network--link-icon">
-                <use href="./images/symbol-defs.svg#icon-facebo"></use>
-              </svg>
-                        </a>
-                    </li>
-                </ul>
-                <p class="footer__contact ">
-                    Feel free to contact
-                    <a class="footer__contact-tel " href="tel:+610383766284 ">+61 (0) 383 766 284</a
-          >
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__pre-title">
+          homemade ice cream <span class="footer__pre-title--span"> made</span>
         </p>
-    </div>
-        <p class="footer__copyrigt ">
+        <p class="footer__title">
+          with <br />
+          passion
+        </p>
+        <div class="footer__box">
+          <ul class="footer__network">
+            <li class="footer__network--item">
+              <a class="footer__network--link" href="https://github.com ">
+                <svg
+                  class="footer__network--link-icon"
+                  width="32px"
+                  height="32px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-git "></use>
+                </svg>
+              </a>
+                            </li>
+                            <li class="footer__network--item">
+                                <a class="footer__network--link" href="https://web.telegram.org ">
+                                    <svg class="footer__network--link-icon" width="32px" height="32px">
+                  <use href="./images/symbol-defs.svg#icon-teleg"></use>
+                </svg>
+                                </a>
+                            </li>
+                            <li class="footer__network--item">
+                                <a class="footer__network--link" href="https://www.facebook.com ">
+                                    <svg class="footer__network--link-icon" width="32px" height="32px">
+                  <use href="./images/symbol-defs.svg#icon-facebo"></use>
+                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="footer__contact">
+                            Feel free to contact
+                            <a class="footer__contact-tel" href="tel:+610383766284 ">+61 (0) 383 766 284</a
+            >
+          </p>
+        </div>
+        <p class="footer__copyrigt">
           © 2019 - IceCream.
-          <span class="footer__copyrigt--span ">All Rights Reserved.</span>
+          <span class="footer__copyrigt--span">All Rights Reserved.</span>
         </p>
       </div>
     </footer>
