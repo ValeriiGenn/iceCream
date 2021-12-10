@@ -107,6 +107,7 @@ root {
 .mobile-menu__container {
   position: relative;
   padding: 23px 21px;
+  height: 100vh;
 }
 
 .mobile-menu__button--close {
