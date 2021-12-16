@@ -191,6 +191,10 @@ root {
 }
 
 .hero-header__container::after {
+  -webkit-animation: animate15 5000ms infinite 2000ms;
+          animation: animate15 5000ms infinite 2000ms;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   content: "";
   position: absolute;
   z-index: -1;
@@ -291,6 +295,52 @@ root {
   color: #d41443;
 }
 
+@-webkit-keyframes animate15 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animate15 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .products {
     margin-left: auto;
@@ -350,6 +400,8 @@ root {
     background-color: #ffb8ca;
   }
   .products__item--cream::before {
+    -webkit-animation: animate125 3000ms infinite 1000ms;
+            animation: animate125 3000ms infinite 1000ms;
     content: "";
     display: block;
     width: 249px;
@@ -363,6 +415,8 @@ root {
     background: #f0d1a5;
   }
   .products__item--coffee::before {
+    -webkit-animation: animate50 3000ms infinite 1000ms;
+            animation: animate50 3000ms infinite 1000ms;
     content: "";
     display: block;
     width: 249px;
@@ -376,6 +430,8 @@ root {
     background: #c2e297;
   }
   .products__item--milk::before {
+    -webkit-animation: animateX25 3000ms infinite 1000ms;
+            animation: animateX25 3000ms infinite 1000ms;
     content: "";
     display: block;
     width: 249px;
@@ -422,6 +478,128 @@ root {
     width: 15px;
     height: 15px;
     fill: #d41443;
+  }
+}
+
+@-webkit-keyframes animate125 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate125 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animate50 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate50 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animateX25 {
+  0% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  25% {
+    -webkit-transform: skewX(25deg);
+            transform: skewX(25deg);
+  }
+  50% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  50% {
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@keyframes animateX25 {
+  0% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  25% {
+    -webkit-transform: skewX(25deg);
+            transform: skewX(25deg);
+  }
+  50% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  50% {
+    -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
   }
 }
 

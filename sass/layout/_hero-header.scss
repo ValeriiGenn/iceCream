@@ -23,6 +23,8 @@
             background-repeat: no-repeat;
         }
         &::after {
+            animation: animate15 5000ms infinite 2000ms;
+            transform-origin: bottom center;
             content: "";
             position: absolute;
             z-index: -1;
@@ -94,5 +96,23 @@
         justify-content: center;
         background-color: #ffffff;
         color: #d41443;
+    }
+}
+
+@keyframes animate15 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
