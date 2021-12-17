@@ -1111,8 +1111,6 @@ root {
   width: 7px;
   height: 10px;
   margin-bottom: -1px;
-  stroke: #ffffff;
-  fill: #d41342;
 }
 
 .contacts__btn--franchise {
@@ -1136,8 +1134,6 @@ root {
   width: 7px;
   height: 10px;
   margin-bottom: -1px;
-  stroke: #d41443;
-  fill: #fff;
 }
 
 .footer {
