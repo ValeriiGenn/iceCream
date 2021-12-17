@@ -30,15 +30,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            //width: 32px;
-            //height: 32px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            // background-color: #fea5bb;
+            background-color: #fea5bb;
         }
-        /*&--link-icon {
-            stroke: #d41443;
-            fill: red;
-        }*/
+        &--link-icon {
+            width: 19px;
+            height: 19px;
+            //stroke: #d41443;
+            //fill: red;
+        }
     }
     &__network--item:not(:last-child) {
         margin-right: 28px;
