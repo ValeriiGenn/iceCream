@@ -11,6 +11,8 @@
         z-index: 0;
         height: 100%;
         &::before {
+            animation: animate10 5000ms infinite 2000ms;
+            transform-origin: bottom bottom;
             content: "";
             display: inline-block;
             position: absolute;
@@ -96,6 +98,30 @@
         justify-content: center;
         background-color: #ffffff;
         color: #d41443;
+    }
+}
+
+@keyframes animate10 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+    90% {
+        transform: scale(1);
+    }
+    95% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
