@@ -1105,7 +1105,7 @@ root {
   border: none;
 }
 
-.contacts__btn--loc-icon {
+.contacts__btn--locicon {
   margin-left: 11px;
   display: inline-block;
   width: 7px;
@@ -1130,7 +1130,7 @@ root {
   border: none;
 }
 
-.contacts__btn--fran-icon {
+.contacts__btn--fricon {
   margin-left: 13px;
   display: inline-block;
   width: 7px;
