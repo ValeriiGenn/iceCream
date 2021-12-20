@@ -1191,6 +1191,10 @@ root {
   background-color: #fea5bb;
 }
 
+.footer__network--link:hover, .footer__network--link:focus {
+  background-color: #d41443;
+}
+
 .footer__network--link-icon {
   width: 19px;
   height: 19px;
@@ -1213,11 +1217,6 @@ root {
 }
 
 .footer__contact-tel {
-  /*font-family: DM Sans;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 186%;
-        text-align: right;*/
   color: #d41443;
   text-decoration: none;
 }
