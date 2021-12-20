@@ -248,7 +248,7 @@ textarea {
 
 .form__checkbox:checked + .form__icon-check {
   border-color: var(--accent-color);
-  background-image: url(../images/checkopt.svg);
+  background-image: url(//images/checkm.svg);
   background-size: contain;
   background-origin: border-box;
   cursor: pointer;
