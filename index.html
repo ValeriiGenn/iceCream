@@ -56,7 +56,7 @@
     </header>
     <main>
         <!--секція продукція-->
-        <section class="products">
+        <section id="products" class="products">
             <h2 class="visually-hidden">Products</h2>
             <div class="container products__container">
                 <div class="products__slogan">
@@ -122,7 +122,7 @@
             </div>
         </section>
         <!--секція про -->
-        <section class="about">
+        <section id="about" class="about">
             <h2 class="visually-hidden">About</h2>
             <div class="container about__container">
                 <h3 class="about__title">tradition and love</h3>
@@ -246,7 +246,7 @@
                 </ul>
             </div>
         </section>
-        <section class="contacts">
+        <section id="contact" class="contacts">
             <h2 class="visually-hidden">Contacts</h2>
             <div class="container contacts__container">
                 <ul class="contacts__list">
@@ -365,8 +365,7 @@
             <li>
               <button
                 class="contacts__button contacts__btn--locations"
-                onclick="document.location='http:www.google.com.ua/maps'"
-                target="_blank"
+                onclick="document.location='blank/http:www.google.com.ua/maps'"
               >
                 Our Locations<svg class="contacts__btn--locicon">
                   <use href="./images/symbol-defs.svg#icon-Vector1"></use>
@@ -451,16 +450,16 @@
           <a href="" class="mobile-menu__link">Home</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">About us</a>
+                        <a href="#about" class="mobile-menu__link">About us</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">How it’s made?</a>
+                        <a href="#about" class="mobile-menu__link">How it’s made?</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">Our products</a>
+                        <a href="#products" class="mobile-menu__link">Our products</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link">Contact</a>
+                        <a href="#contact" class="mobile-menu__link">Contact</a>
                     </li>
                 </ul>
             </div>
