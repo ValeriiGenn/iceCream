@@ -1327,9 +1327,9 @@ textarea {
   margin-top: 54px;
 }
 
-.contacts__button {
+.contacts__link {
   height: 44px;
-  min-width: 161.5px;
+  width: 180px;
   border-radius: 22px;
   text-align: center;
   -webkit-box-align: center;
