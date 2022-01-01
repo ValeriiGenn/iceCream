@@ -28,6 +28,7 @@
 
 .mobile-menu {
     margin-top: 32px;
+    border-bottom: 1px solid #e18298;
     &__button {
         background-color: (--white-color);
         border: none;
@@ -57,6 +58,10 @@
         margin-left: 14px;
     }
     &__link {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 20px;
         font-family: DM Sans;
         font-weight: bold;
         font-size: 14px;
@@ -65,7 +70,11 @@
         align-items: center;
         color: #ffffff;
     }
-    &__item:not(:last-child) {
-        margin-bottom: 23px;
+    &__item {
+        width: 100%;
+        border-top: 1px solid #e18298;
     }
+    /*&__item:not(:last-child) {
+        margin-bottom: 23px;
+    }*/
 }

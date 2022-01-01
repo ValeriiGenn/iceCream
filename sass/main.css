@@ -355,6 +355,10 @@ textarea {
 
 .mobile-menu {
   margin-top: 32px;
+  border-bottom: 1px solid #e18298;
+  /*&__item:not(:last-child) {
+        margin-bottom: 23px;
+    }*/
 }
 
 .mobile-menu__button {
@@ -398,6 +402,10 @@ textarea {
 }
 
 .mobile-menu__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
   font-family: DM Sans;
   font-weight: bold;
   font-size: 14px;
@@ -411,8 +419,9 @@ textarea {
   color: #ffffff;
 }
 
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 23px;
+.mobile-menu__item {
+  width: 100%;
+  border-top: 1px solid #e18298;
 }
 
 .hero-header {
