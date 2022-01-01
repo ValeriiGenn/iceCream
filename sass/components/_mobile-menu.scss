@@ -13,13 +13,13 @@
 }
 
 .menu-container.is-open {
-    transform: translateX(0);
+    transform: translateX(10%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle {
     position: absolute;
-    right: 28px;
+    left: 28px;
     top: 23px;
     z-index: 9;
     background-color: #e17992;
