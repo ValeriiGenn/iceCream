@@ -6,7 +6,6 @@
     background-image: linear-gradient( 180deg, #ffffff 10%, #fff5f6 10%, #fff5f6 90%);
     &__list--item {
         padding: 41px 21px 42px 20px;
-        // position: relative;
         margin-right: auto;
         margin-left: auto;
         justify-content: center;
@@ -17,11 +16,8 @@
         border-radius: 24px;
     }
     &__list--item-cafe {
-        //position: absolute;
         width: 80px;
         height: 22px;
-        //top: 41px;
-        //@extend: 20px;
         background: #f0d1a5;
         border-radius: 4px;
         font-weight: 500;
@@ -46,7 +42,6 @@
         color: #ffffff;
     }
     &__city--name {
-        //position: absolute;
         margin-bottom: 10px;
         min-width: 57px;
         height: 22px;
@@ -88,13 +83,6 @@
         color: #ffa5ba;
     }
     &__contact {
-        /* margin-top: 25px;
-        margin-bottom: 42px;
-        font-family: DM Sans;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;*/
         color: #907e82;
     }
     &__contact--link {
