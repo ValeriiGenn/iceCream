@@ -1404,7 +1404,7 @@ textarea {
   position: fixed;
   display: none;
   bottom: 15px;
-  right: 140px;
+  right: 100px;
   height: 40px;
   width: 40px;
   line-height: 35px;
@@ -1417,7 +1417,7 @@ textarea {
 }
 
 .i-icon::before {
-  content: url(/images/icscrollup.png);
+  content: url(../images/icscrollup.png);
   width: 20px;
   height: 20px;
 }
