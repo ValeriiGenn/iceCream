@@ -1,0 +1,29 @@
+#scrollup.mgray {
+    background: rgba(88%, 47%, 57%, 0.6);
+    border-radius: 0;
+    color: #fff;
+}
+
+#scrollup {
+    z-index: 11;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    bottom: 15px;
+    right: 140px;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+}
+
+.i-icon {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+.i-icon::before {
+    content: url(/images/icscrollup.png);
+    width: 20px;
+    height: 20px;
+}
