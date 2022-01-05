@@ -319,7 +319,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   padding: 23px 21px;
   padding-top: 60px;
   background-color: #e17992;
@@ -1434,9 +1434,9 @@ textarea {
   /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   /* Full width */
-  height: 520px;
+  height: 100vh;
   /* Full height */
   overflow-y: auto;
   /* Enable scroll if needed */
@@ -1455,6 +1455,7 @@ textarea {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  z-index: 12;
   width: 100%;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
