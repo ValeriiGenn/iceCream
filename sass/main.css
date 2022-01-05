@@ -1436,9 +1436,9 @@ textarea {
   top: 0;
   width: 100%;
   /* Full width */
-  height: 120%;
+  height: 520px;
   /* Full height */
-  overflow: auto;
+  overflow-y: auto;
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
