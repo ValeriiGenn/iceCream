@@ -1450,6 +1450,7 @@ textarea {
 
 /* Modal Content */
 .modalbuy-content {
+  overflow-y: auto;
   background-color: #ffb8ca;
   margin: auto;
   padding: 20px;
