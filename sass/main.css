@@ -1448,6 +1448,8 @@ textarea {
 
 /* Modal Content */
 .modalbuy-content {
+  position: relative;
+  z-index: 13;
   overflow-y: auto;
   background-color: #ffb8ca;
   margin: auto;
@@ -1455,6 +1457,7 @@ textarea {
   border: 1px solid #888;
   z-index: 12;
   width: 100%;
+  height: auto;
 }
 
 /* The Close Button */
