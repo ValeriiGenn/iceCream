@@ -1453,7 +1453,7 @@ textarea {
   overflow-y: auto;
   background-color: #ffb8ca;
   margin: auto;
-  padding: 0 20px 5px 20px;
+  padding: 10px 20px;
   border: 1px solid #888;
   width: 100%;
   height: auto;
@@ -1462,7 +1462,6 @@ textarea {
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  font-size: 35px;
 }
 
 .close:hover,
