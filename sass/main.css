@@ -1453,7 +1453,7 @@ textarea {
   overflow-y: auto;
   background-color: #ffb8ca;
   margin: auto;
-  padding: 20px;
+  padding: 0 20px 5px 20px;
   border: 1px solid #888;
   width: 100%;
   height: auto;
@@ -1463,7 +1463,6 @@ textarea {
 .close {
   color: #aaaaaa;
   font-size: 35px;
-  font-weight: bold;
 }
 
 .close:hover,
