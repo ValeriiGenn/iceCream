@@ -55,10 +55,13 @@ root {
   cursor: pointer;
 }
 
-.container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -363,7 +366,7 @@ textarea {
   border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mobile-menu__button {
     display: none;
     fill: currentColor;
@@ -431,6 +434,13 @@ textarea {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-header {
+    height: 399px;
+    padding-top: 37px;
+  }
+}
+
 .hero-header__container {
   position: relative;
   z-index: 0;
@@ -438,10 +448,6 @@ textarea {
 }
 
 .hero-header__container::before {
-  -webkit-animation: animate10 5000ms infinite 2000ms;
-          animation: animate10 5000ms infinite 2000ms;
-  -webkit-transform-origin: bottom bottom;
-          transform-origin: bottom bottom;
   content: "";
   display: inline-block;
   position: absolute;
@@ -454,11 +460,18 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-header__container::before {
+    width: 324px;
+    height: 322px;
+    left: 307px;
+    top: 6px;
+    background-image: url(../images/Ellburgtabm.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 .hero-header__container::after {
-  -webkit-animation: animate15 5000ms infinite 2000ms;
-          animation: animate15 5000ms infinite 2000ms;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
   content: "";
   position: absolute;
   z-index: -1;
@@ -470,9 +483,29 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-header__container::after {
+    width: 143px;
+    height: 336px;
+    background-image: url(../images/compr768/ice-burger-1x-min.png);
+    left: 378px;
+    top: 26px;
+  }
+}
+
 .hero-header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   background-color: #ffb8ca;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__btn {
+    margin-left: 291px;
+    background-color: #ffa5ba;
+  }
 }
 
 .hero-header__wrapper-wrap {
@@ -508,6 +541,18 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 137px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__nav {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__filter {
+    margin-bottom: 66px;
+  }
 }
 
 .hero-header__filter--list {
@@ -557,6 +602,63 @@ textarea {
           justify-content: center;
   background-color: #ffffff;
   color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__wrap {
+    margin-left: 120px;
+    width: 114px;
+    position: relative;
+  }
+  .hero-header__wrap::before {
+    content: "";
+    display: block;
+    width: 124px;
+    height: 126px;
+    position: absolute;
+    top: -46px;
+    left: -120px;
+    background-image: url(../images/compr768/milk-1x-min.png);
+    background-repeat: no-repeat;
+  }
+  .hero-header__wrap--button {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: none;
+    background-color: #fff;
+  }
+  .hero-header__wrap--button-icon {
+    width: 8px;
+    height: 8px;
+    fill: #d41443;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-header__wrap {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__text {
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 150%;
+    margin-bottom: 7px;
+    color: #ffffff;
+  }
 }
 
 @-webkit-keyframes animate10 {
@@ -683,144 +785,153 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .products {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 121px;
-    padding-bottom: 98px;
-    text-align: center;
-  }
-  .products__slogan {
-    margin-bottom: 114px;
-  }
-  .products__slogan--first {
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffa5ba;
-  }
-  .products__slogan--second {
-    font-family: Titan One;
-    font-size: 34px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #d41443;
-  }
+.products {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
 }
 
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .products__list {
-    position: relative;
-    width: 280px;
-    margin: 0 auto;
-  }
+.products__slogan {
+  margin-bottom: 114px;
 }
 
-@media screen and (max-width: 767px) {
-  .products__item {
-    margin: 0 auto;
-    min-width: 280px;
-    border-radius: 24px;
-    padding: 161px 39px 41px 41px;
-  }
-  .products__item--title {
-    font-family: Titan One;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 30px;
-  }
-  .products__item--cream {
-    background-color: #ffb8ca;
-  }
-  .products__item--cream::before {
-    -webkit-animation: animate125 3000ms infinite 1000ms;
-            animation: animate125 3000ms infinite 1000ms;
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    position: absolute;
-    top: -119px;
-    left: 16px;
-    background-image: url(../images/compr480/ice-cream-1x-min.png);
-  }
-  .products__item--coffee {
-    background: #f0d1a5;
-  }
-  .products__item--coffee::before {
-    -webkit-animation: animate50 3000ms infinite 1000ms;
-            animation: animate50 3000ms infinite 1000ms;
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    position: absolute;
-    top: 495px;
-    left: 16px;
-    background-image: url(../images/compr480/ice-coffee-1x-min.png);
-  }
-  .products__item--milk {
-    background: #c2e297;
-  }
-  .products__item--milk::before {
-    -webkit-animation: animateX25 3000ms infinite 1000ms;
-            animation: animateX25 3000ms infinite 1000ms;
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    position: absolute;
-    top: 1103px;
-    left: 16px;
-    background-image: url(../images/compr480/milkshakes-1x-min.png);
-  }
-  .products__item:not(:last-child) {
-    margin-bottom: 120px;
-  }
-  .products__item--icon {
-    margin: 0 auto 30px;
-  }
-  .products__item--text {
-    margin-bottom: 30px;
-    font-family: DM Sans;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 152%;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-  }
-  .products__item--button {
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #fff;
-  }
-  .products__item--button-icon {
-    width: 15px;
-    height: 15px;
-    fill: #d41443;
-  }
+.products__slogan--first {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.products__slogan--second {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.products__list {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.products__item {
+  margin: 0 auto;
+  min-width: 280px;
+  border-radius: 24px;
+  padding: 161px 39px 41px 41px;
+}
+
+.products__item--title {
+  font-family: Titan One;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.products__item--cream {
+  background-color: #ffb8ca;
+}
+
+.products__item--cream::before {
+  -webkit-animation: animate125 3000ms infinite 1000ms;
+          animation: animate125 3000ms infinite 1000ms;
+  content: "";
+  display: block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: -119px;
+  left: 16px;
+  background-image: url(../images/compr480/ice-cream-1x-min.png);
+}
+
+.products__item--coffee {
+  background: #f0d1a5;
+}
+
+.products__item--coffee::before {
+  -webkit-animation: animate50 3000ms infinite 1000ms;
+          animation: animate50 3000ms infinite 1000ms;
+  content: "";
+  display: block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: 495px;
+  left: 16px;
+  background-image: url(../images/compr480/ice-coffee-1x-min.png);
+}
+
+.products__item--milk {
+  background: #c2e297;
+}
+
+.products__item--milk::before {
+  -webkit-animation: animateX25 3000ms infinite 1000ms;
+          animation: animateX25 3000ms infinite 1000ms;
+  content: "";
+  display: block;
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  top: 1103px;
+  left: 16px;
+  background-image: url(../images/compr480/milkshakes-1x-min.png);
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.products__item--icon {
+  margin: 0 auto 30px;
+}
+
+.products__item--text {
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.products__item--button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+}
+
+.products__item--button-icon {
+  width: 15px;
+  height: 15px;
+  fill: #d41443;
 }
 
 @-webkit-keyframes animate125 {

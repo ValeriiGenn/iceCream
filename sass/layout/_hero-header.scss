@@ -2,6 +2,10 @@
     background-color: #ffb8ca;
     background-size: 346px;
     background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        height: 399px;
+        padding-top: 37px;
+    }
     padding-top: 6px;
     height: 502px;
     position: relative;
@@ -11,11 +15,19 @@
         z-index: 0;
         height: 100%;
         &::before {
-            animation: animate10 5000ms infinite 2000ms;
-            transform-origin: bottom bottom;
+            //animation: animate10 5000ms infinite 2000ms;
+            //transform-origin: bottom bottom;
             content: "";
             display: inline-block;
             position: absolute;
+            @media screen and (min-width: 768px) {
+                width: 324px;
+                height: 322px;
+                left: 307px;
+                top: 6px;
+                background-image: url(../images/Ellburgtabm.svg);
+                background-repeat: no-repeat;
+            }
             width: 346px;
             height: 344px;
             right: -19%;
@@ -25,11 +37,18 @@
             background-repeat: no-repeat;
         }
         &::after {
-            animation: animate15 5000ms infinite 2000ms;
-            transform-origin: bottom center;
+            //animation: animate15 5000ms infinite 2000ms;
+            //transform-origin: bottom center;
             content: "";
             position: absolute;
             z-index: -1;
+            @media screen and (min-width: 768px) {
+                width: 143px;
+                height: 336px;
+                background-image: url(../images/compr768/ice-burger-1x-min.png);
+                left: 378px;
+                top: 26px;
+            }
             width: 171px;
             height: 410px;
             right: 12px;
@@ -39,6 +58,11 @@
         }
     }
     &__btn {
+        display: flex;
+        @media screen and (min-width: 768px) {
+            margin-left: 291px;
+            background-color: #ffa5ba;
+        }
         border: none;
         background-color: #ffb8ca;
     }
@@ -63,9 +87,17 @@
     }
     &__nav {
         display: flex;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 15px;
+        }
         justify-content: space-between;
         align-items: center;
         margin-bottom: 137px;
+    }
+    &__filter {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 66px;
+        }
     }
     &__filter--list {
         display: flex;
@@ -98,6 +130,52 @@
         justify-content: center;
         background-color: #ffffff;
         color: #d41443;
+    }
+    &__wrap {
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            width: 114px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 124px;
+                height: 126px;
+                position: absolute;
+                top: -46px;
+                left: -120px;
+                background-image: url(../images/compr768/milk-1x-min.png);
+                background-repeat: no-repeat;
+            }
+            &--button {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                border: none;
+                background-color: #fff;
+            }
+            &--button-icon {
+                width: 8px;
+                height: 8px;
+                fill: #d41443;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__text {
+        @media screen and (min-width: 768px) {
+            font-family: DM Sans;
+            font-size: 8px;
+            line-height: 150%;
+            margin-bottom: 7px;
+            color: #ffffff;
+        }
     }
 }
 
