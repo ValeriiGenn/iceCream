@@ -15,8 +15,8 @@
         z-index: 0;
         height: 100%;
         &::before {
-            //animation: animate10 5000ms infinite 2000ms;
-            //transform-origin: bottom bottom;
+            animation: animate10 5000ms infinite 2000ms;
+            transform-origin: bottom bottom;
             content: "";
             display: inline-block;
             position: absolute;
@@ -37,8 +37,8 @@
             background-repeat: no-repeat;
         }
         &::after {
-            //animation: animate15 5000ms infinite 2000ms;
-            //transform-origin: bottom center;
+            animation: animate15 5000ms infinite 2000ms;
+            transform-origin: bottom center;
             content: "";
             position: absolute;
             z-index: -1;
@@ -142,7 +142,7 @@
                 width: 124px;
                 height: 126px;
                 position: absolute;
-                top: -46px;
+                top: -35px;
                 left: -120px;
                 background-image: url(../images/compr768/milk-1x-min.png);
                 background-repeat: no-repeat;

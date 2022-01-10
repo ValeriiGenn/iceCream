@@ -448,6 +448,10 @@ textarea {
 }
 
 .hero-header__container::before {
+  -webkit-animation: animate10 5000ms infinite 2000ms;
+          animation: animate10 5000ms infinite 2000ms;
+  -webkit-transform-origin: bottom bottom;
+          transform-origin: bottom bottom;
   content: "";
   display: inline-block;
   position: absolute;
@@ -472,6 +476,10 @@ textarea {
 }
 
 .hero-header__container::after {
+  -webkit-animation: animate15 5000ms infinite 2000ms;
+          animation: animate15 5000ms infinite 2000ms;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   content: "";
   position: absolute;
   z-index: -1;
@@ -616,7 +624,7 @@ textarea {
     width: 124px;
     height: 126px;
     position: absolute;
-    top: -46px;
+    top: -35px;
     left: -120px;
     background-image: url(../images/compr768/milk-1x-min.png);
     background-repeat: no-repeat;
