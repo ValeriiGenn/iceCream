@@ -55,12 +55,17 @@ root {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 480px;
+    max-width: 768px;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 39px 34px 0 34px;
   }
 }
 
@@ -437,7 +442,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero-header {
     height: 399px;
-    padding-top: 37px;
   }
 }
 
@@ -466,6 +470,10 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero-header__container::before {
+    -webkit-animation: animate11 2500ms infinite 2000ms;
+            animation: animate11 2500ms infinite 2000ms;
+    -webkit-transform-origin: bottom bottom;
+            transform-origin: bottom bottom;
     width: 324px;
     height: 322px;
     left: 307px;
@@ -493,6 +501,10 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero-header__container::after {
+    -webkit-animation: animate16 2500ms infinite 2000ms;
+            animation: animate16 2500ms infinite 2000ms;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
     width: 143px;
     height: 336px;
     background-image: url(../images/compr768/ice-burger-1x-min.png);
@@ -512,7 +524,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero-header__btn {
     margin-left: 291px;
-    background-color: #ffa5ba;
+    background-color: transparent;
   }
 }
 
@@ -536,6 +548,43 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-header__wrapper--wrap {
+    font-family: Titan One;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 767px) {
+  .hero-header__wrapper--wrap {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__wrapper--wrap-text {
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    text-transform: none;
+    color: #ffffff;
+  }
 }
 
 .hero-header__nav {
@@ -651,6 +700,17 @@ textarea {
     height: 8px;
     fill: #d41443;
   }
+  .hero-header__wrap::after {
+    content: "";
+    display: block;
+    width: 168px;
+    height: 133px;
+    position: absolute;
+    top: -25px;
+    left: 440px;
+    background-image: url(../images/compr768/ice-girl-1x-min.png);
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -731,22 +791,68 @@ textarea {
   }
 }
 
+@-webkit-keyframes animate11 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate11 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @-webkit-keyframes animate15 {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   25% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   75% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   90% {
     -webkit-transform: scale(1);
@@ -768,16 +874,16 @@ textarea {
             transform: scale(1);
   }
   25% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   75% {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   90% {
     -webkit-transform: scale(1);
@@ -786,6 +892,52 @@ textarea {
   95% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animate16 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate16 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     -webkit-transform: scale(1);
