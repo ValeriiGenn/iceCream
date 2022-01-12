@@ -65,7 +65,8 @@ root {
   .container {
     max-width: 768px;
     width: 100%;
-    padding: 39px 34px 0 34px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }
 
@@ -442,6 +443,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero-header {
     height: 399px;
+    padding-top: 37px;
   }
 }
 
@@ -552,6 +554,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero-header__wrapper {
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -559,7 +562,14 @@ textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .hero-header__wrapper--wrap {
+}
+
+.hero-header__number-list {
+  z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__number-list {
     font-family: Titan One;
     font-size: 28px;
     line-height: 32px;
@@ -570,20 +580,54 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 767px) {
-  .hero-header__wrapper--wrap {
-    display: block;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-header__number-list {
+    display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .hero-header__wrapper--wrap-text {
-    font-family: DM Sans;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: right;
-    text-transform: none;
-    color: #ffffff;
+.hero-header__number-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hero-header__number-sixten::before {
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 61px;
+  left: 725px;
+  background-image: url(../images/Elwit1m.svg);
+  background-repeat: no-repeat;
+}
+
+.hero-header__number-tvthree::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 122px;
+  right: 26px;
+  background-image: url(../images/Elwit1m.svg);
+  background-repeat: no-repeat;
+}
+
+.hero-header__number-text {
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  text-transform: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767) {
+  .hero-header__number-text {
+    display: none;
   }
 }
 
@@ -603,6 +647,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero-header__nav {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767) {
+  .hero-header__navbtn {
+    display: none;
   }
 }
 
@@ -661,6 +711,12 @@ textarea {
   color: #d41443;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-header__wrap {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-header__wrap {
     margin-left: 120px;
@@ -707,20 +763,14 @@ textarea {
     height: 133px;
     position: absolute;
     top: -25px;
-    left: 440px;
+    left: 425px;
     background-image: url(../images/compr768/ice-girl-1x-min.png);
     background-repeat: no-repeat;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .hero-header__wrap {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .hero-header__text {
+  .hero-header__wrap--text {
     font-family: DM Sans;
     font-size: 8px;
     line-height: 150%;
@@ -1709,7 +1759,7 @@ textarea {
   /* Full width */
   height: 100vh;
   /* Full height */
-  overflow-y: auto;
+  overflow-y: scroll;
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */

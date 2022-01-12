@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     @media screen and (min-width: 768px) {
         height: 399px;
-        //padding-top: 37px;
+        padding-top: 37px;
     }
     padding-top: 6px;
     height: 502px;
@@ -91,137 +91,171 @@
     }
     &__wrapper {
         @media screen and (min-width: 768px) {
+            z-index: 2;
             display: flex;
             justify-content: space-between;
         }
-        &--wrap {
-            @media screen and (min-width: 768px) {
-                font-family: Titan One;
-                font-size: 28px;
-                line-height: 32px;
-                text-align: right;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
-                color: #d41443;
-            }
+    }
+    &__number-list {
+        @media screen and (min-width: 768px) {
+            font-family: Titan One;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #d41443;
+        }
+        z-index: 3;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
             display: none;
         }
-        &--wrap-text {
-            font-family: DM Sans;
-            font-size: 8px;
-            line-height: 10px;
-            text-align: right;
-            text-transform: none;
-            color: #ffffff;
-        }
     }
-}
-
-&__nav {
-    display: flex;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 15px;
+    &__number-item:not(:last-child) {
+        margin-bottom: 16px;
     }
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 137px;
-}
-
-&__filter {
-    @media screen and (min-width: 768px) {
-        margin-bottom: 66px;
-        //&--wrap-list{}
+    &__number-sixten::before {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 61px;
+        left: 725px;
+        background-image: url(../images/Elwit1m.svg);
+        background-repeat: no-repeat;
     }
-}
-
-&__filter--list {
-    display: flex;
-}
-
-&__button--red {
-    min-width: 62.4px;
-    height: 24px;
-    border-radius: 12px;
-    border: none;
-    font-family: DM Sans;
-    font-size: 8px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #d41443;
-    color: #ffffff;
-    margin-right: 8px;
-}
-
-&__button--white {
-    min-width: 82.8px;
-    height: 24px;
-    border-radius: 12px;
-    border: none;
-    font-family: DM Sans;
-    font-size: 8px;
-    line-height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #d41443;
-}
-
-&__wrap {
-    @media screen and (min-width: 768px) {
-        margin-left: 120px;
-        width: 114px;
-        position: relative;
-        &::before {
-            content: "";
-            display: block;
-            width: 124px;
-            height: 126px;
-            position: absolute;
-            top: -35px;
-            left: -120px;
-            background-image: url(../images/compr768/milk-1x-min.png);
-            background-repeat: no-repeat;
-        }
-        &--button {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            border-radius: 9px;
-            border: none;
-            background-color: #fff;
-        }
-        &--button-icon {
-            width: 8px;
-            height: 8px;
-            fill: #d41443;
-        }
-        &::after {
-            content: "";
-            display: block;
-            width: 168px;
-            height: 133px;
-            position: absolute;
-            top: -25px;
-            left: 440px;
-            background-image: url(../images/compr768/ice-girl-1x-min.png);
-            background-repeat: no-repeat;
-        }
+    &__number-tvthree::after {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 122px;
+        right: 26px;
+        background-image: url(../images/Elwit1m.svg);
+        background-repeat: no-repeat;
     }
-}
-
-&__text {
-    @media screen and (min-width: 768px) {
+    &__number-text {
         font-family: DM Sans;
         font-size: 8px;
-        line-height: 150%;
-        margin-bottom: 7px;
+        line-height: 10px;
+        text-align: right;
+        text-transform: none;
         color: #ffffff;
+        @media screen and (min-width: 320px) and (max-width: 767) {
+            display: none;
+        }
+    }
+    &__nav {
+        display: flex;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 15px;
+        }
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 137px;
+    }
+    &__navbtn {
+        @media screen and (min-width: 320px) and (max-width: 767) {
+            display: none;
+        }
+    }
+    &__filter {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 66px;
+        }
+    }
+    &__filter--list {
+        display: flex;
+    }
+    &__button--red {
+        min-width: 62.4px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d41443;
+        color: #ffffff;
+        margin-right: 8px;
+    }
+    &__button--white {
+        min-width: 82.8px;
+        height: 24px;
+        border-radius: 12px;
+        border: none;
+        font-family: DM Sans;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #d41443;
+    }
+    &__wrap {
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            margin-left: 120px;
+            width: 114px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 124px;
+                height: 126px;
+                position: absolute;
+                top: -35px;
+                left: -120px;
+                background-image: url(../images/compr768/milk-1x-min.png);
+                background-repeat: no-repeat;
+            }
+            &--button {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 18px;
+                border-radius: 9px;
+                border: none;
+                background-color: #fff;
+            }
+            &--button-icon {
+                width: 8px;
+                height: 8px;
+                fill: #d41443;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 168px;
+                height: 133px;
+                position: absolute;
+                top: -25px;
+                left: 425px;
+                background-image: url(../images/compr768/ice-girl-1x-min.png);
+                background-repeat: no-repeat;
+            }
+        }
+        &--text {
+            @media screen and (min-width: 768px) {
+                font-family: DM Sans;
+                font-size: 8px;
+                line-height: 150%;
+                margin-bottom: 7px;
+                color: #ffffff;
+            }
+        }
     }
 }
 
