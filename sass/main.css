@@ -650,9 +650,32 @@ textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767) {
+.hero-header__navbtn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
   .hero-header__navbtn {
-    display: none;
+    margin-left: 30px;
+    width: 160px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: none;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d41443;
   }
 }
 
