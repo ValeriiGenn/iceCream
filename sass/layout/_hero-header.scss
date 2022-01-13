@@ -6,6 +6,11 @@
         height: 399px;
         padding-top: 37px;
     }
+    @media screen and (min-width: 1200px) {
+        height: 665px;
+        padding-top: 37px;
+        background-size: 538px;
+    }
     padding-top: 6px;
     height: 502px;
     position: relative;
@@ -29,6 +34,14 @@
                 top: 6px;
                 background-image: url(../images/Ellburgtabm.svg);
                 background-repeat: no-repeat;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 538px;
+                height: 538px;
+                //left: 307px;
+                //top: 6px;
+                // background-image: url(../images/Ellburgtabm.svg);
+                //background-repeat: no-repeat;
             }
             width: 346px;
             height: 344px;
@@ -63,6 +76,9 @@
     }
     &__btn {
         display: flex;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
         @media screen and (min-width: 768px) {
             margin-left: 291px;
             background-color: transparent;
@@ -95,6 +111,10 @@
             display: flex;
             justify-content: space-between;
         }
+        @media screen and (min-width: 1200px) {
+            margin-left: 78px;
+            margin-right: 60px;
+        }
     }
     &__number-list {
         @media screen and (min-width: 768px) {
@@ -106,9 +126,19 @@
             text-transform: uppercase;
             color: #d41443;
         }
+        @media screen and (min-width: 1200px) {
+            font-size: 46px;
+            line-height: 53px;
+        }
         z-index: 3;
         @media screen and (min-width: 320px) and (max-width: 767px) {
             display: none;
+        }
+    }
+    &__number-item {
+        @media screen and (min-width: 1200px) {
+            width: 92px;
+            height: 76px;
         }
     }
     &__number-item:not(:last-child) {
@@ -145,6 +175,12 @@
         text-align: right;
         text-transform: none;
         color: #ffffff;
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 18px;
+            width: 74px;
+            height: 18px;
+        }
         @media screen and (min-width: 320px) and (max-width: 767) {
             display: none;
         }
@@ -154,12 +190,33 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 15px;
         }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 84px;
+        }
         justify-content: space-between;
         align-items: center;
         margin-bottom: 137px;
+        &--list {
+            display: none;
+            @media screen and (min-width: 1200px) {
+                display: flex;
+            }
+        }
+        &--item:not(:last-child) {
+            margin-right: 35px;
+        }
+        &--link {
+            font-family: DM Sans;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+        }
     }
     &__navbtn {
-        @media screen and (min-width: 768px) and (max-width: 1250px) {
+        @media screen and (min-width: 768px) {
             margin-left: 30px;
             width: 160px;
             height: 44px;
@@ -175,11 +232,19 @@
             justify-content: center;
             color: #d41443;
         }
+        @media screen and (min-width: 1200px) {
+            width: 160px;
+            margin-left: 0;
+            margin-right: 78px;
+        }
         display: none;
     }
     &__filter {
         @media screen and (min-width: 768px) {
             margin-bottom: 66px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 78px;
         }
     }
     &__filter--list {

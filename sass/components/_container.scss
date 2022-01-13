@@ -5,6 +5,12 @@
         padding-left: 34px;
         padding-right: 34px;
     }
+    @media screen and (min-width: 1200px) {
+        max-width: 1280px;
+        width: 100%;
+        //@at-root: 34px;
+        //padding-right: 34px;
+    }
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
