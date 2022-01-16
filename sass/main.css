@@ -459,6 +459,7 @@ textarea {
     height: 665px;
     padding-top: 37px;
     background-size: 538px;
+    padding-left: 46px;
   }
 }
 
@@ -504,6 +505,8 @@ textarea {
   .hero-header__container::before {
     width: 538px;
     height: 538px;
+    background-image: url(/images/Ellburgtabm.svg);
+    background-size: 538px;
   }
 }
 
@@ -537,6 +540,14 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-header__container::after {
+    width: 236px;
+    height: 557px;
+    background-image: url(../images/compr1280/ice-burger-1x-min.png);
+  }
+}
+
 .hero-header__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +573,12 @@ textarea {
   margin-bottom: 19px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-header__wrapper-wrap {
+    margin-top: 20px;
+  }
+}
+
 .hero-header__title {
   font-family: Titan One;
   font-size: 22px;
@@ -571,6 +588,13 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-header__title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+
 .hero-header__title--first {
   font-family: Titan One;
   font-size: 34px;
@@ -578,6 +602,12 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header__title--first {
+    font-size: 58px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -620,18 +650,14 @@ textarea {
     font-size: 46px;
     line-height: 53px;
   }
+  .hero-header__number-list h3 {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-header__number-list {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-header__number-item {
-    width: 92px;
-    height: 76px;
   }
 }
 
@@ -652,6 +678,16 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-header__number-sixten::before {
+    top: 128px;
+    left: 1120px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
+}
+
 .hero-header__number-tvthree::after {
   z-index: -1;
   content: "";
@@ -663,6 +699,16 @@ textarea {
   right: 26px;
   background-image: url(../images/Elwit1m.svg);
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header__number-tvthree::after {
+    top: 228px;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
 }
 
 .hero-header__number-text {
@@ -678,7 +724,6 @@ textarea {
   .hero-header__number-text {
     font-size: 14px;
     line-height: 18px;
-    width: 74px;
     height: 18px;
   }
 }
@@ -821,6 +866,17 @@ textarea {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-header__button--red {
+    min-width: 102px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 17px;
+  }
+}
+
 .hero-header__button--white {
   min-width: 82.8px;
   height: 24px;
@@ -840,6 +896,16 @@ textarea {
           justify-content: center;
   background-color: #ffffff;
   color: #d41443;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header__button--white {
+    min-width: 138px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -865,6 +931,27 @@ textarea {
     background-image: url(../images/compr768/milk-1x-min.png);
     background-repeat: no-repeat;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-header__wrap {
+    margin-left: 249px;
+    width: 200px;
+  }
+  .hero-header__wrap::before {
+    content: "";
+    display: block;
+    width: 188px;
+    height: 191px;
+    position: absolute;
+    top: -35px;
+    left: -250px;
+    background-image: url(../images/compr1280/milk-1x-min.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-header__wrap--button {
     position: absolute;
     display: -webkit-box;
@@ -882,6 +969,17 @@ textarea {
     border: none;
     background-color: #fff;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-header__wrap--button {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-header__wrap--button-icon {
     width: 8px;
     height: 8px;
@@ -900,6 +998,16 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-header__wrap::after {
+    width: 293px;
+    height: 232px;
+    top: -25px;
+    left: 580px;
+    background-image: url(../images/compr1280/ice-girl-1x-min.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-header__wrap--text {
     font-family: DM Sans;
@@ -907,6 +1015,14 @@ textarea {
     line-height: 150%;
     margin-bottom: 7px;
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header__wrap--text {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 20px;
   }
 }
 

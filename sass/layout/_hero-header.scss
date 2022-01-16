@@ -10,6 +10,7 @@
         height: 665px;
         padding-top: 37px;
         background-size: 538px;
+        padding-left: 46px;
     }
     padding-top: 6px;
     height: 502px;
@@ -40,8 +41,8 @@
                 height: 538px;
                 //left: 307px;
                 //top: 6px;
-                // background-image: url(../images/Ellburgtabm.svg);
-                //background-repeat: no-repeat;
+                background-image: url(/images/Ellburgtabm.svg);
+                background-size: 538px;
             }
             width: 346px;
             height: 344px;
@@ -66,6 +67,11 @@
                 left: 378px;
                 top: 26px;
             }
+            @media screen and (min-width: 1200px) {
+                width: 236px;
+                height: 557px;
+                background-image: url(../images/compr1280/ice-burger-1x-min.png);
+            }
             width: 171px;
             height: 410px;
             right: 12px;
@@ -88,6 +94,9 @@
     }
     &__wrapper-wrap {
         margin-bottom: 19px;
+        @media screen and(min-width: 1200px) {
+            margin-top: 20px;
+        }
     }
     &__title {
         font-family: Titan One;
@@ -96,6 +105,10 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #ffffff;
+        @media screen and(min-width: 1200px) {
+            font-size: 38px;
+            line-height: 44px;
+        }
         &--first {
             font-family: Titan One;
             font-size: 34px;
@@ -103,6 +116,9 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: #d41443;
+            @media screen and(min-width: 1200px) {
+                font-size: 58px;
+            }
         }
     }
     &__wrapper {
@@ -129,6 +145,9 @@
         @media screen and (min-width: 1200px) {
             font-size: 46px;
             line-height: 53px;
+            h3 {
+                margin-bottom: 10px;
+            }
         }
         z-index: 3;
         @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -137,8 +156,8 @@
     }
     &__number-item {
         @media screen and (min-width: 1200px) {
-            width: 92px;
-            height: 76px;
+            // width: 92px;
+            //height: 76px;
         }
     }
     &__number-item:not(:last-child) {
@@ -155,6 +174,13 @@
         left: 725px;
         background-image: url(../images/Elwit1m.svg);
         background-repeat: no-repeat;
+        @media screen and(min-width: 1200px) {
+            top: 128px;
+            left: 1120px;
+            width: 30px;
+            height: 30px;
+            background-size: 30px;
+        }
     }
     &__number-tvthree::after {
         z-index: -1;
@@ -167,6 +193,13 @@
         right: 26px;
         background-image: url(../images/Elwit1m.svg);
         background-repeat: no-repeat;
+        @media screen and(min-width: 1200px) {
+            top: 228px;
+            right: 80px;
+            width: 30px;
+            height: 30px;
+            background-size: 30px;
+        }
     }
     &__number-text {
         font-family: DM Sans;
@@ -178,7 +211,7 @@
         @media screen and (min-width: 1200px) {
             font-size: 14px;
             line-height: 18px;
-            width: 74px;
+            //width: 74px;
             height: 18px;
         }
         @media screen and (min-width: 320px) and (max-width: 767) {
@@ -264,6 +297,14 @@
         background-color: #d41443;
         color: #ffffff;
         margin-right: 8px;
+        @media screen and (min-width: 1200px) {
+            min-width: 102px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 17px;
+        }
     }
     &__button--white {
         min-width: 82.8px;
@@ -278,6 +319,13 @@
         justify-content: center;
         background-color: #ffffff;
         color: #d41443;
+        @media screen and (min-width: 1200px) {
+            min-width: 138px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
     &__wrap {
         @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -298,6 +346,22 @@
                 background-image: url(../images/compr768/milk-1x-min.png);
                 background-repeat: no-repeat;
             }
+            @media screen and (min-width: 1200px) {
+                margin-left: 249px;
+                width: 200px;
+                //position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 188px;
+                    height: 191px;
+                    position: absolute;
+                    top: -35px;
+                    left: -250px;
+                    background-image: url(../images/compr1280/milk-1x-min.png);
+                    background-repeat: no-repeat;
+                }
+            }
             &--button {
                 position: absolute;
                 display: flex;
@@ -308,6 +372,11 @@
                 border-radius: 9px;
                 border: none;
                 background-color: #fff;
+                @media screen and (min-width: 1200px) {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 13px;
+                }
             }
             &--button-icon {
                 width: 8px;
@@ -324,6 +393,13 @@
                 left: 425px;
                 background-image: url(../images/compr768/ice-girl-1x-min.png);
                 background-repeat: no-repeat;
+                @media screen and (min-width: 1200px) {
+                    width: 293px;
+                    height: 232px;
+                    top: -25px;
+                    left: 580px;
+                    background-image: url(../images/compr1280/ice-girl-1x-min.png);
+                }
             }
         }
         &--text {
@@ -333,6 +409,11 @@
                 line-height: 150%;
                 margin-bottom: 7px;
                 color: #ffffff;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 140%;
+                margin-bottom: 20px;
             }
         }
     }
