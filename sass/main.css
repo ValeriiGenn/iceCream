@@ -321,6 +321,12 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__button-send {
+    left: 150px;
+  }
+}
+
 .form__button-send:hover, .form__button-send:focus {
   -webkit-box-shadow: 4px 4px 4px 4px rgba(128, 26, 26, 0.25);
           box-shadow: 4px 4px 4px 4px rgba(128, 26, 26, 0.25);
@@ -445,6 +451,25 @@ textarea {
   height: 502px;
   position: relative;
   overflow: hidden;
+  /*&__number-tvthree::after {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 122px;
+        right: 26px;
+        background-image: url(../images/Elwit1m.svg);
+        background-repeat: no-repeat;
+        @media screen and(min-width: 1200px) {
+            top: 228px;
+            right: 80px;
+            width: 30px;
+            height: 30px;
+            background-size: 30px;
+        }
+}*/
 }
 
 @media screen and (min-width: 768px) {
@@ -505,7 +530,9 @@ textarea {
   .hero-header__container::before {
     width: 538px;
     height: 538px;
-    background-image: url(/images/Ellburgtabm.svg);
+    left: 450px;
+    top: 14px;
+    background-image: url(../images/Ellburgtabm.svg);
     background-size: 538px;
   }
 }
@@ -544,6 +571,8 @@ textarea {
   .hero-header__container::after {
     width: 236px;
     height: 557px;
+    left: 570px;
+    top: 90px;
     background-image: url(../images/compr1280/ice-burger-1x-min.png);
   }
 }
@@ -661,50 +690,31 @@ textarea {
   }
 }
 
+.hero-header__number-item {
+  position: relative;
+}
+
 .hero-header__number-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.hero-header__number-sixten::before {
+.hero-header__number-item::before {
   z-index: -1;
   content: "";
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 61px;
-  left: 725px;
+  top: -3px;
+  right: -8px;
   background-image: url(../images/Elwit1m.svg);
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-header__number-sixten::before {
-    top: 128px;
-    left: 1120px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-  }
-}
-
-.hero-header__number-tvthree::after {
-  z-index: -1;
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 122px;
-  right: 26px;
-  background-image: url(../images/Elwit1m.svg);
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-header__number-tvthree::after {
-    top: 228px;
-    right: 80px;
+  .hero-header__number-item::before {
+    top: -6px;
+    right: -16px;
     width: 30px;
     height: 30px;
     background-size: 30px;
@@ -789,6 +799,12 @@ textarea {
   color: #ffffff;
 }
 
+.hero-header__nav--link:hover,
+.hero-header__nav :focus {
+  color: #d41443;
+  background-color: #ffb8ca;
+}
+
 .hero-header__navbtn {
   display: none;
 }
@@ -824,6 +840,12 @@ textarea {
     margin-left: 0;
     margin-right: 78px;
   }
+}
+
+.hero-header__navbtn :hover,
+.hero-header :focus {
+  color: #d41443;
+  background-color: #ecebeb;
 }
 
 @media screen and (min-width: 768px) {
@@ -945,7 +967,7 @@ textarea {
     height: 191px;
     position: absolute;
     top: -35px;
-    left: -250px;
+    left: -210px;
     background-image: url(../images/compr1280/milk-1x-min.png);
     background-repeat: no-repeat;
   }
@@ -1003,7 +1025,7 @@ textarea {
     width: 293px;
     height: 232px;
     top: -25px;
-    left: 580px;
+    left: 570px;
     background-image: url(../images/compr1280/ice-girl-1x-min.png);
   }
 }

@@ -39,9 +39,9 @@
             @media screen and (min-width: 1200px) {
                 width: 538px;
                 height: 538px;
-                //left: 307px;
-                //top: 6px;
-                background-image: url(/images/Ellburgtabm.svg);
+                left: 450px;
+                top: 14px;
+                background-image: url(../images/Ellburgtabm.svg);
                 background-size: 538px;
             }
             width: 346px;
@@ -70,6 +70,8 @@
             @media screen and (min-width: 1200px) {
                 width: 236px;
                 height: 557px;
+                left: 570px;
+                top: 90px;
                 background-image: url(../images/compr1280/ice-burger-1x-min.png);
             }
             width: 171px;
@@ -155,34 +157,31 @@
         }
     }
     &__number-item {
-        @media screen and (min-width: 1200px) {
-            // width: 92px;
-            //height: 76px;
-        }
+        position: relative;
     }
     &__number-item:not(:last-child) {
         margin-bottom: 16px;
     }
-    &__number-sixten::before {
+    &__number-item::before {
         z-index: -1;
         content: "";
-        display: block;
+        display: inline-block;
         width: 16px;
         height: 16px;
         position: absolute;
-        top: 61px;
-        left: 725px;
+        top: -3px;
+        right: -8px;
         background-image: url(../images/Elwit1m.svg);
         background-repeat: no-repeat;
         @media screen and(min-width: 1200px) {
-            top: 128px;
-            left: 1120px;
+            top: -6px;
+            right: -16px;
             width: 30px;
             height: 30px;
             background-size: 30px;
         }
     }
-    &__number-tvthree::after {
+    /*&__number-tvthree::after {
         z-index: -1;
         content: "";
         display: block;
@@ -200,7 +199,7 @@
             height: 30px;
             background-size: 30px;
         }
-    }
+}*/
     &__number-text {
         font-family: DM Sans;
         font-size: 8px;
@@ -247,6 +246,11 @@
             align-items: center;
             color: #ffffff;
         }
+        &--link:hover,
+         :focus {
+            color: #d41443;
+            background-color: #ffb8ca;
+        }
     }
     &__navbtn {
         @media screen and (min-width: 768px) {
@@ -271,6 +275,11 @@
             margin-right: 78px;
         }
         display: none;
+    }
+    &__navbtn :hover,
+     :focus {
+        color: #d41443;
+        background-color: #ecebeb;
     }
     &__filter {
         @media screen and (min-width: 768px) {
@@ -357,7 +366,7 @@
                     height: 191px;
                     position: absolute;
                     top: -35px;
-                    left: -250px;
+                    left: -210px;
                     background-image: url(../images/compr1280/milk-1x-min.png);
                     background-repeat: no-repeat;
                 }
@@ -397,7 +406,7 @@
                     width: 293px;
                     height: 232px;
                     top: -25px;
-                    left: 580px;
+                    left: 570px;
                     background-image: url(../images/compr1280/ice-girl-1x-min.png);
                 }
             }
