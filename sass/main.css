@@ -1276,6 +1276,12 @@ textarea {
   margin-bottom: 114px;
 }
 
+@media screen and (min-width: 768px) {
+  .products__slogan {
+    margin-bottom: 150px;
+  }
+}
+
 .products__slogan--first {
   font-family: Titan One;
   font-size: 18px;
@@ -1283,6 +1289,13 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .products__slogan--first {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 .products__slogan--second {
@@ -1295,17 +1308,44 @@ textarea {
   color: #d41443;
 }
 
+@media screen and (min-width: 768px) {
+  .products__slogan--second {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
 .products__list {
   position: relative;
   width: 280px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .products__item {
   margin: 0 auto;
+  position: relative;
   min-width: 280px;
   border-radius: 24px;
   padding: 161px 39px 41px 41px;
+}
+
+@media screen and (min-width: 768px) {
+  .products__item {
+    width: 220px;
+    height: 485px;
+    padding: 152px 11px 40px 11px;
+  }
+  .products__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .products__item--title {
@@ -1336,6 +1376,16 @@ textarea {
   background-image: url(../images/compr480/ice-cream-1x-min.png);
 }
 
+@media screen and (min-width: 768px) {
+  .products__item--cream::before {
+    width: 220px;
+    height: 226px;
+    top: -105px;
+    left: 35px;
+    background-image: url(../images/compr768/ice-cream-1x-min.png);
+  }
+}
+
 .products__item--coffee {
   background: #f0d1a5;
 }
@@ -1348,9 +1398,19 @@ textarea {
   width: 249px;
   height: 252px;
   position: absolute;
-  top: 495px;
+  top: -115px;
   left: 16px;
   background-image: url(../images/compr480/ice-coffee-1x-min.png);
+}
+
+@media screen and (min-width: 768px) {
+  .products__item--coffee::before {
+    width: 220px;
+    height: 233px;
+    top: -110px;
+    left: 35px;
+    background-image: url(/images/compr768/ice-coffee-1x-min.png);
+  }
 }
 
 .products__item--milk {
@@ -1365,9 +1425,19 @@ textarea {
   width: 249px;
   height: 252px;
   position: absolute;
-  top: 1103px;
+  top: -115px;
   left: 16px;
   background-image: url(../images/compr480/milkshakes-1x-min.png);
+}
+
+@media screen and (min-width: 768px) {
+  .products__item--milk::before {
+    width: 220px;
+    height: 224px;
+    top: -103px;
+    left: 35px;
+    background-image: url(../images/compr768/milkshakes-1x-min.png);
+  }
 }
 
 .products__item:not(:last-child) {

@@ -8,7 +8,14 @@
 
 .products__slogan {
     margin-bottom: 114px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 150px;
+    }
     &--first {
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+            line-height: 30px;
+        }
         font-family: Titan One;
         font-size: 18px;
         line-height: 21px;
@@ -17,6 +24,10 @@
         color: #ffa5ba;
     }
     &--second {
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            line-height: 55px;
+        }
         font-family: Titan One;
         font-size: 34px;
         line-height: 39px;
@@ -28,14 +39,25 @@
 }
 
 .products__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
     position: relative;
     width: 280px;
     margin: 0 auto;
 }
 
 .products__item {
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 485px;
+        padding: 152px 11px 40px 11px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
     margin: 0 auto;
-    //position: relative;
+    position: relative;
     min-width: 280px;
     //min-height: 485px;
     border-radius: 24px;
@@ -55,8 +77,14 @@
         &::before {
             animation: animate125 3000ms infinite 1000ms;
             content: "";
-            //content: "";
             display: block;
+            @media screen and (min-width: 768px) {
+                width: 220px;
+                height: 226px;
+                top: -105px;
+                left: 35px;
+                background-image: url(../images/compr768/ice-cream-1x-min.png);
+            }
             width: 249px;
             height: 252px;
             position: absolute;
@@ -74,10 +102,17 @@
             animation: animate50 3000ms infinite 1000ms;
             content: "";
             display: block;
+            @media screen and (min-width: 768px) {
+                width: 220px;
+                height: 233px;
+                top: -110px;
+                left: 35px;
+                background-image: url(/images/compr768/ice-coffee-1x-min.png);
+            }
             width: 249px;
             height: 252px;
             position: absolute;
-            top: 495px;
+            top: -115px;
             left: 16px;
             background-image: url(../images/compr480/ice-coffee-1x-min.png);
         }
@@ -88,10 +123,17 @@
             animation: animateX25 3000ms infinite 1000ms;
             content: "";
             display: block;
+            @media screen and (min-width: 768px) {
+                width: 220px;
+                height: 224px;
+                top: -103px;
+                left: 35px;
+                background-image: url(../images/compr768/milkshakes-1x-min.png);
+            }
             width: 249px;
             height: 252px;
             position: absolute;
-            top: 1103px;
+            top: -115px;
             left: 16px;
             background-image: url(../images/compr480/milkshakes-1x-min.png);
             //background-position: 1850px 36px;
