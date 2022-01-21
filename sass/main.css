@@ -1777,6 +1777,22 @@ textarea {
   background-position: 0 87%;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: none;
+    padding-top: 132px;
+    padding-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 65px;
+    background-image: url(/images/compr1280/sectionbg1x-min.png);
+  }
+}
+
 .about__container {
   margin-left: 30px;
 }
@@ -1791,6 +1807,13 @@ textarea {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
 .about__preview {
   font-family: Titan One;
   font-size: 34px;
@@ -1802,8 +1825,38 @@ textarea {
   margin-bottom: 26px;
 }
 
-.about__content {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .about__preview {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+
+.about__picture {
+  margin-right: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__wrap {
+    width: 360px;
+    margin-bottom: 62px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__wrap {
+    width: 463px;
+  }
 }
 
 .about__signature {
@@ -1816,6 +1869,22 @@ textarea {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__signature {
+    font-size: 14px;
+    line-height: 176%;
+    margin-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__signature {
+    font-size: 16px;
+    line-height: 176%;
+    margin-bottom: 35px;
+  }
+}
+
 .about__text {
   font-family: DM Sans;
   font-weight: 500;
@@ -1824,12 +1893,43 @@ textarea {
   color: #907e82;
 }
 
+@media screen and (min-width: 768px) {
+  .about__text {
+    font-size: 14px;
+    line-height: 176%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__text {
+    line-height: 194%;
+  }
+}
+
 .about__text--first {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .about__text--first {
+    margin-bottom: 30px;
+  }
+}
+
 .about__text--second {
   margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text--second {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__text--second {
+    margin-bottom: 45px;
+  }
 }
 
 .about__button {
@@ -1848,6 +1948,12 @@ textarea {
   color: #d41443;
   background-color: #fff;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about__button {
+    margin: 0 auto;
+  }
 }
 
 .about__btn--icon {
