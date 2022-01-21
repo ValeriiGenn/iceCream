@@ -56,9 +56,12 @@ root {
 }
 
 .container {
+  max-width: 280px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1272,13 +1275,9 @@ textarea {
   text-align: center;
 }
 
-.products__slogan {
-  margin-bottom: 114px;
-}
-
 @media screen and (min-width: 768px) {
-  .products__slogan {
-    margin-bottom: 150px;
+  .products {
+    padding-bottom: 112px;
   }
 }
 
@@ -1289,6 +1288,7 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1306,18 +1306,19 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  margin-bottom: 144px;
 }
 
 @media screen and (min-width: 768px) {
   .products__slogan--second {
     font-size: 48px;
     line-height: 55px;
+    margin-bottom: 158px;
   }
 }
 
 .products__list {
   position: relative;
-  width: 280px;
   margin: 0 auto;
 }
 
@@ -1342,9 +1343,6 @@ textarea {
     width: 220px;
     height: 485px;
     padding: 152px 11px 40px 11px;
-  }
-  .products__item:not(:last-child) {
-    margin-right: 20px;
   }
 }
 
@@ -1444,6 +1442,13 @@ textarea {
   margin-bottom: 120px;
 }
 
+@media screen and (min-width: 768px) {
+  .products__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
 .products__item--icon {
   margin: 0 auto 30px;
 }
@@ -1513,6 +1518,53 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes animate125 {
+    0% {
+      -webkit-transform: translate 0, 0;
+              transform: translate 0, 0;
+    }
+    25% {
+      -webkit-transform: translate(-25px, -25px);
+              transform: translate(-25px, -25px);
+    }
+    50% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    75% {
+      -webkit-transform: translate(25px, -50px);
+              transform: translate(25px, -50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @keyframes animate125 {
+    0% {
+      -webkit-transform: translate 0, 0;
+              transform: translate 0, 0;
+    }
+    25% {
+      -webkit-transform: translate(-25px, -25px);
+              transform: translate(-25px, -25px);
+    }
+    50% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    75% {
+      -webkit-transform: translate(25px, -50px);
+              transform: translate(25px, -50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+}
+
 @-webkit-keyframes animate50 {
   0% {
     -webkit-transform: scale(1);
@@ -1556,6 +1608,53 @@ textarea {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes animate50 {
+    0% {
+      -webkit-transform: translate 0, 0;
+              transform: translate 0, 0;
+    }
+    25% {
+      -webkit-transform: translate(-25px, -25px);
+              transform: translate(-25px, -25px);
+    }
+    50% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    75% {
+      -webkit-transform: translate(25px, -50px);
+              transform: translate(25px, -50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @keyframes animate50 {
+    0% {
+      -webkit-transform: translate 0, 0;
+              transform: translate 0, 0;
+    }
+    25% {
+      -webkit-transform: translate(-25px, -25px);
+              transform: translate(-25px, -25px);
+    }
+    50% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    75% {
+      -webkit-transform: translate(25px, -50px);
+              transform: translate(25px, -50px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
   }
 }
 
