@@ -342,7 +342,7 @@ textarea {
 .menu-container {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 70vh;
   padding: 23px 21px;
