@@ -1771,6 +1771,9 @@ textarea {
   padding-top: 125px;
   padding-bottom: 39px;
   background: #fff5f6;
+}
+
+.about__container {
   background-image: url(../images/compr480/sectionbg1-1x-min.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1778,7 +1781,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .about {
+  .about__container {
     background-image: none;
     padding-top: 132px;
     padding-bottom: 65px;
@@ -1786,7 +1789,7 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .about {
+  .about__container {
     padding-top: 125px;
     padding-bottom: 65px;
     background-image: url(/images/compr1280/sectionbg1x-min.png);
