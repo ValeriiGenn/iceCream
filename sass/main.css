@@ -2140,20 +2140,51 @@ textarea {
 .gallery {
   max-width: 100%;
   display: block;
-  height: 122px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #fff), color-stop(0, #fff));
   background-image: linear-gradient(#fff5f6 40%, #fff 40%, #fff 0);
-}
-
-.gallery__container {
   padding: 0;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .gallery__container {
-    width: 480px;
+    width: 768px;
+    padding: 0 24px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__container {
+    width: 1200px;
+    padding: 0 115px;
+  }
+}
+
+.gallery__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__flex {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__flex {
+    margin-left: -115px;
+    margin-right: -115px;
+  }
+}
+
+.gallery__picture {
+  margin: 0 auto;
 }
 
 .customer-reviews {
