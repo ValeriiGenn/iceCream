@@ -1981,6 +1981,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages__container {
+    width: 1200px;
+  }
+}
+
 .advantages__list {
   list-style: none;
 }
@@ -2004,8 +2010,17 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .advantages__item:not(:last-child) {
+    width: 180px;
     margin-bottom: 0;
     margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__item:not(:last-child) {
+    width: 330px;
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
@@ -2027,6 +2042,13 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages__content {
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
 .advantages__signature {
   font-family: DM Sans;
   font-style: normal;
@@ -2044,6 +2066,14 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages__signature {
+    width: 330px;
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
 .first::before {
   content: "";
   display: inline-block;
@@ -2051,6 +2081,18 @@ textarea {
   height: 50px;
   margin-bottom: 16px;
   background-image: url("../images/icon1-min.png");
+}
+
+@media screen and (min-width: 768px) {
+  .first::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first::before {
+    margin-bottom: 40px;
+  }
 }
 
 .second::before {
@@ -2062,6 +2104,18 @@ textarea {
   background-image: url("../images/icon2-min.png");
 }
 
+@media screen and (min-width: 768px) {
+  .second::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .second::before {
+    margin-bottom: 40px;
+  }
+}
+
 .third::before {
   content: "";
   display: inline-block;
@@ -2069,6 +2123,18 @@ textarea {
   height: 50px;
   margin-bottom: 16px;
   background-image: url("../images/icon3-min.png");
+}
+
+@media screen and (min-width: 768px) {
+  .third::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .third::before {
+    margin-bottom: 40px;
+  }
 }
 
 .gallery {
