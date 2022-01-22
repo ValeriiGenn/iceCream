@@ -2,22 +2,21 @@
     padding-top: 125px;
     padding-bottom: 39px;
     background: #fff5f6;
-    @media screen and (min-width: 768px) {
-        background-image: none;
-        padding-top: 132px;
-        padding-bottom: 65px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-top: 125px;
-        padding-bottom: 65px;
-        background-image: url(/images/compr1280/sectionbg1x-min.png);
-    }
-    background-image: url(../images/compr480/sectionbg1-1x-min.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 87%;
     &__container {
-        margin-left: 30px;
+        @media screen and (min-width: 768px) {
+            background-image: none;
+            padding-top: 132px;
+            padding-bottom: 65px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-top: 125px;
+            padding-bottom: 65px;
+            background-image: url(/images/compr1280/sectionbg1x-min.png);
+        }
+        background-image: url(../images/compr480/sectionbg1-1x-min.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 87%;
     }
     &__title {
         @media screen and (min-width: 768px) {
