@@ -6,11 +6,11 @@
         @media screen and (min-width: 768px) {
             background-image: none;
             padding-top: 132px;
-            padding-bottom: 65px;
+            //padding-bottom: 65px;
         }
         @media screen and (min-width: 1200px) {
             padding-top: 125px;
-            padding-bottom: 65px;
+            //padding-bottom: 65px;
             background-image: url(../images/compr1280/sectionbg1x-min.png);
         }
         background-image: url(../images/compr480/sectionbg1-1x-min.png);
@@ -54,12 +54,15 @@
         //margin-right: 50px;
     }
     &__picture {
+        @media screen and (min-width: 1200px) {
+            margin-right: 71px;
+        }
         margin-right: 17px;
     }
     &__wrap {
         @media screen and (min-width: 768px) {
             width: 360px;
-            margin-bottom: 62px;
+            // margin-bottom: 62px;
         }
         @media screen and (min-width: 1200px) {
             width: 463px;

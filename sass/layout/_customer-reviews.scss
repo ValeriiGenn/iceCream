@@ -1,7 +1,27 @@
 .customer-reviews {
-    padding-top: 80px;
+    @media screen and (min-width: 768px) {
+        padding-top: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 131px;
+    }
+    padding-top: 88px;
+    &__container {
+        @media screen and (min-width: 768px) {
+            width: 620px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 926px;
+        }
+    }
     &__photo {
         margin: 0px auto 29px;
+        @media screen and (min-width: 768px) {
+            margin: 0px auto 19px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0px auto 15px;
+        }
     }
     &__signature {
         position: relative;
@@ -27,15 +47,38 @@
         line-height: 255%;
         text-align: center;
         color: #000000;
-        background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
+        background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 28px, #e1e1e1 28px, #e1e1e1 30px);
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 216%;
+            background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 28px, #e1e1e1 28px, #e1e1e1 30px);
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 186%;
+            background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 27px, #e1e1e1 27px, #e1e1e1 29px);
+        }
     }
     &__user {
         text-align: center;
+        font-size: 14px;
+        line-height: 26px;
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            line-height: 186%;
+        }
     }
     &__user--icon {
         display: flex;
         justify-content: center;
         margin-top: 30px;
+        @media screen and (min-width: 768px) {
+            margin-top: 35px;
+        }
     }
     &__user--icon-item:not(:last-child) {
         margin-right: 18px;
@@ -44,6 +87,12 @@
         display: flex;
         justify-content: center;
         margin: 30px auto 18px;
+        @media screen and (min-width: 768px) {
+            margin: 24px auto 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 23px auto 7px;
+        }
     }
     &__content--item:not(:last-child) {
         margin-right: 10px;

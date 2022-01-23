@@ -341,7 +341,7 @@ textarea {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 50vh;
+  height: 70vh;
   padding: 23px 21px;
   padding-top: 60px;
   background-color: #e17992;
@@ -1784,14 +1784,12 @@ textarea {
   .about__container {
     background-image: none;
     padding-top: 132px;
-    padding-bottom: 65px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about__container {
     padding-top: 125px;
-    padding-bottom: 65px;
     background-image: url(../images/compr1280/sectionbg1x-min.png);
   }
 }
@@ -1845,10 +1843,15 @@ textarea {
   margin-right: 17px;
 }
 
+@media screen and (min-width: 1200px) {
+  .about__picture {
+    margin-right: 71px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about__wrap {
     width: 360px;
-    margin-bottom: 62px;
   }
 }
 
@@ -1970,6 +1973,18 @@ textarea {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 25px 0 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding: 0 0 139px;
+  }
+}
+
 .advantages__container {
   width: 480px;
   padding-left: 20px;
@@ -1978,12 +1993,14 @@ textarea {
 @media screen and (min-width: 768px) {
   .advantages__container {
     width: 768px;
+    padding-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__container {
     width: 1200px;
+    padding-left: 40px;
   }
 }
 
@@ -2001,7 +2018,6 @@ textarea {
 
 .advantages__item {
   width: 230px;
-  height: 156px;
 }
 
 .advantages__item:not(:last-child) {
@@ -2146,6 +2162,10 @@ textarea {
   margin: 0 auto;
 }
 
+.gallery__container {
+  width: 364px;
+}
+
 @media screen and (min-width: 768px) {
   .gallery__container {
     width: 768px;
@@ -2165,21 +2185,18 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -50px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery__flex {
-    margin-left: -24px;
-    margin-right: -24px;
+    margin-left: -20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__flex {
-    margin-left: -115px;
-    margin-right: -115px;
+    margin-left: -190px;
   }
 }
 
@@ -2188,11 +2205,47 @@ textarea {
 }
 
 .customer-reviews {
-  padding-top: 80px;
+  padding-top: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding-top: 131px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__container {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__container {
+    width: 926px;
+  }
 }
 
 .customer-reviews__photo {
   margin: 0px auto 29px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__photo {
+    margin: 0px auto 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__photo {
+    margin: 0px auto 15px;
+  }
 }
 
 .customer-reviews__signature {
@@ -2221,11 +2274,43 @@ textarea {
   line-height: 255%;
   text-align: center;
   color: #000000;
-  background-image: repeating-linear-gradient(180deg, transparent 0, transparent 30px, #e1e1e1 0, transparent 31px);
+  background-image: repeating-linear-gradient(180deg, transparent 0, transparent 28px, #e1e1e1 28px, #e1e1e1 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__text {
+    font-size: 14px;
+    line-height: 216%;
+    background-image: repeating-linear-gradient(180deg, transparent 0, transparent 28px, #e1e1e1 28px, #e1e1e1 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__text {
+    font-size: 16px;
+    line-height: 186%;
+    background-image: repeating-linear-gradient(180deg, transparent 0, transparent 27px, #e1e1e1 27px, #e1e1e1 29px);
+  }
 }
 
 .customer-reviews__user {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__user {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__user {
+    font-size: 20px;
+    line-height: 186%;
+  }
 }
 
 .customer-reviews__user--icon {
@@ -2236,6 +2321,12 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__user--icon {
+    margin-top: 35px;
+  }
 }
 
 .customer-reviews__user--icon-item:not(:last-child) {
@@ -2250,6 +2341,18 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__content {
+    margin: 24px auto 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews__content {
+    margin: 23px auto 7px;
+  }
 }
 
 .customer-reviews__content--item:not(:last-child) {
