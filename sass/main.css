@@ -2368,19 +2368,72 @@ textarea {
   background-image: linear-gradient(180deg, #ffffff 10%, #fff5f6 10%, #fff5f6 90%);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #ffffff), color-stop(18%, #fff5f6), color-stop(82%, #fff5f6));
+    background-image: linear-gradient(180deg, #ffffff 18%, #fff5f6 18%, #fff5f6 82%);
+    padding-bottom: 158px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: url(../images/compr1280/contcbg-min.png), -webkit-gradient(linear, left top, left bottom, color-stop(18%, #ffffff), color-stop(18%, #fff5f6), color-stop(82%, #fff5f6));
+    background-image: url(../images/compr1280/contcbg-min.png), linear-gradient(180deg, #ffffff 18%, #fff5f6 18%, #fff5f6 82%);
+    padding-bottom: 165px;
+    background-position: 60px 180px, top;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contacts__list--item {
   padding: 41px 21px 42px 20px;
   margin-right: auto;
   margin-left: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 220px;
-  height: 427px;
   background: #ffffff;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+}
+
+.contacts__list--item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list--item:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list--item:not(:last-child) {
+    margin-right: 31px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list--item {
+    width: 220px;
+    padding: 50px 31px 50px 31px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list--item {
+    width: 330px;
+    padding: 59px 44px 62px 36px;
+  }
 }
 
 .contacts__list--item-cafe {
@@ -2419,6 +2472,12 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__item--food {
+    height: 22px;
+  }
+}
+
 .contacts__city--name {
   margin-bottom: 10px;
   min-width: 57px;
@@ -2431,6 +2490,22 @@ textarea {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__city--name {
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__city--name {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
 .contacts__city--description {
   margin-bottom: 25px;
   font-family: DM Sans;
@@ -2441,12 +2516,52 @@ textarea {
   color: #907e82;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__city--description {
+    margin-bottom: 32px;
+    width: 160px;
+    font-size: 14px;
+    line-height: 166%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__city--description {
+    margin-bottom: 32px;
+    width: 260px;
+    font-size: 16px;
+    line-height: 183%;
+  }
+}
+
 .contacts__timetable {
   padding-top: 25px;
   padding-bottom: 25px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__timetable {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .contacts__timetable--work:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__timetable {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 31px;
+  }
+  .contacts__timetable--work:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .contacts__timetable--work-day {
@@ -2458,11 +2573,35 @@ textarea {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__timetable--work-day {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__timetable--work-day {
+    font-size: 16px;
+  }
+}
+
 .contacts__timetable--work-time {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__timetable--work-time {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__timetable--work-time {
+    font-size: 16px;
+  }
 }
 
 .contacts__contact {
@@ -2480,12 +2619,43 @@ textarea {
   color: #907e82;
 }
 
-.contacts__list--item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .contacts__contact--link {
+    font-size: 14px;
+    line-height: 183%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__contact--link {
+    font-size: 16px;
+    line-height: 183%;
+  }
 }
 
 .contacts__filter {
   margin-top: 54px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 81px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__filter {
+    margin-top: 86px;
+  }
 }
 
 .contacts__link {
@@ -2541,6 +2711,12 @@ textarea {
   color: #d41443;
   background-color: #fff;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__btn--franchise {
+    margin: 0 0 0 15px;
+  }
 }
 
 .contacts__btn--fricon {
