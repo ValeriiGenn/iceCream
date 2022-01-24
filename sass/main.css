@@ -2929,6 +2929,18 @@ span.price {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2942,6 +2954,12 @@ span.price {
 @media screen and (min-width: 768px) {
   .footer__wrapp {
     padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__wrapp {
+    padding-bottom: 106px;
   }
 }
 
@@ -2962,8 +2980,25 @@ span.price {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__pre-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+}
+
 .footer__pre-title--span {
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__pre-title--span {
+    margin-left: 10px;
+  }
 }
 
 .footer__title {
@@ -2981,7 +3016,26 @@ span.price {
     font-size: 48px;
     line-height: 55px;
     margin-bottom: 0;
-    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    font-size: 58px;
+    line-height: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer__title--span {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title--span {
+    margin-left: 16px;
   }
 }
 
@@ -3070,6 +3124,12 @@ span.price {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__copyrigt::before {
+    bottom: 45px;
+  }
+}
+
 .footer__copyrigt {
   font-family: DM Sans;
   font-weight: bold;
@@ -3087,6 +3147,12 @@ span.price {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__copyrigt {
+    line-height: 186%;
   }
 }
 

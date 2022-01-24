@@ -2,6 +2,12 @@
     background: #fff5f6;
     position: relative;
     padding-bottom: 25px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 10px;
+    }
     &__wrap {
         @media screen and (min-width: 768px) {
             display: flex;
@@ -11,6 +17,9 @@
     &__wrapp {
         @media screen and (min-width: 768px) {
             padding-bottom: 120px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 106px;
         }
     }
     &__pre-title {
@@ -25,11 +34,30 @@
             line-height: 30px;
             margin-bottom: 16px;
         }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            font-size: 30px;
+            line-height: 34px;
+            margin-bottom: 16px;
+        }
     }
     &__pre-title--span {
         display: block;
+        @media screen and (min-width: 1200px) {
+            margin-left: 10px;
+        }
     }
     &__title {
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            line-height: 55px;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+            line-height: 66px;
+            display: flex;
+        }
         margin-bottom: 43px;
         font-family: Titan One;
         font-size: 34px;
@@ -37,11 +65,11 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #d41443;
-        @media screen and (min-width: 768px) {
-            font-size: 48px;
-            line-height: 55px;
-            margin-bottom: 0;
-            letter-spacing: 0.04em;
+        &--span {
+            @media screen and (min-width: 1200px) {
+                margin-left: 16px;
+            }
+            display: block;
         }
     }
     &__network {
@@ -102,6 +130,9 @@
         @media screen and (min-width: 768px) {
             bottom: 73px;
         }
+        @media screen and (min-width: 768px) {
+            bottom: 45px;
+        }
     }
     &__copyrigt {
         font-family: DM Sans;
@@ -113,6 +144,9 @@
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: center;
+        }
+        @media screen and (min-width: 1200px) {
+            line-height: 186%;
         }
     }
     &__copyrigt--span {
