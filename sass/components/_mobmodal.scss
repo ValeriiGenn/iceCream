@@ -1,0 +1,159 @@
+.mobmodal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 15;
+    /* Sit on top */
+    //padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow-y: scroll;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.mobmodal-content {
+    position: relative;
+    z-index: 15;
+    overflow-y: auto;
+    background-color: #ffb8ca;
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid #888;
+    width: 100%;
+    height: auto;
+    //transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* The Close Button */
+
+.closebtn {
+    //position: fixed;
+    color: #aaaaaa;
+    //float: right;
+    //font-size: 35px;
+    //font-weight: bold;
+    //z-index: 13;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.wrapper {
+    background-color: #ffb8ca;
+    padding: 0 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.btn {
+    position: relative;
+    left: 85px;
+    background-color: #cf5271;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: #d10c3d;
+}
+
+a {
+    color: #2196f3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 5px;
+    }
+}
