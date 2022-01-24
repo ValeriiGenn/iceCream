@@ -2743,10 +2743,16 @@ textarea {
   height: 40px;
   width: 40px;
   line-height: 35px;
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
+  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media screen and (min-width: 768px) {
+  #scrollup {
+    right: 120px;
+  }
 }
 
 .i-icon {
@@ -2922,6 +2928,23 @@ span.price {
   padding-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapp {
+    padding-bottom: 120px;
+  }
+}
+
 .footer__pre-title {
   margin-bottom: 17px;
   font-family: Titan One;
@@ -2929,6 +2952,14 @@ span.price {
   line-height: 21px;
   text-transform: uppercase;
   color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__pre-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__pre-title--span {
@@ -2945,6 +2976,15 @@ span.price {
   color: #d41443;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 0;
+    letter-spacing: 0.04em;
+  }
+}
+
 .footer__network {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2953,6 +2993,12 @@ span.price {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__network {
+    margin-bottom: 46px;
+  }
 }
 
 .footer__network--link {
@@ -2985,7 +3031,7 @@ span.price {
 }
 
 .footer__contact {
-  min-width: 230px;
+  min-width: 280px;
   height: 22px;
   margin-bottom: 65px;
   font-family: DM Sans, sans-serif;
@@ -2994,6 +3040,12 @@ span.price {
   line-height: 186%;
   text-align: right;
   color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    margin-bottom: 0;
+  }
 }
 
 .footer__contact-tel {
@@ -3012,6 +3064,12 @@ span.price {
   background-color: #e1e1e1;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__copyrigt::before {
+    bottom: 73px;
+  }
+}
+
 .footer__copyrigt {
   font-family: DM Sans;
   font-weight: bold;
@@ -3019,6 +3077,17 @@ span.price {
   line-height: 152%;
   text-align: center;
   color: #907e82;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copyrigt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer__copyrigt--span {
