@@ -491,8 +491,9 @@ textarea {
 
 /* Modal Content */
 .mobmodal-content {
+  position: fixed;
   z-index: 15;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: #ffb8ca;
   margin: auto;
   padding: 10px 20px;
