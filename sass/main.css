@@ -462,7 +462,7 @@ textarea {
   top: 0;
   width: 80vw;
   /* Full width */
-  height: 70vh;
+  height: 100vh;
   /* Full height */
   overflow-y: scroll;
   /* Enable scroll if needed */
@@ -499,7 +499,7 @@ textarea {
   padding: 10px 20px;
   border: 1px solid #888;
   width: 80vw;
-  height: 70vh;
+  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
