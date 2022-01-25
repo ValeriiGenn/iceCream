@@ -120,7 +120,7 @@ root {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    top: 30%;
+    top: 40%;
     left: 20%;
   }
 }
@@ -460,9 +460,9 @@ textarea {
   /* Location of the box */
   left: 0;
   top: 0;
-  width: 90vw;
+  width: 80vw;
   /* Full width */
-  height: 80vh;
+  height: 70vh;
   /* Full height */
   overflow-y: scroll;
   /* Enable scroll if needed */
@@ -474,7 +474,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .mobmodal {
-    width: 50vw;
+    width: 40vw;
     height: 60vh;
   }
 }
@@ -497,14 +497,14 @@ textarea {
   margin: auto;
   padding: 10px 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 80vw;
   height: 70vh;
 }
 
 @media screen and (min-width: 768px) {
   .mobmodal-content {
-    width: 100%;
-    height: 70vh;
+    width: 40vw;
+    height: 60vh;
   }
 }
 
