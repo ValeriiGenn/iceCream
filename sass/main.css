@@ -476,6 +476,7 @@ textarea {
   .mobmodal {
     width: 40vw;
     height: 60vh;
+    left: 150px;
   }
 }
 
