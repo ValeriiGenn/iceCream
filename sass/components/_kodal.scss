@@ -25,13 +25,17 @@
 .kodal {
     position: absolute;
     top: 65%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 350px;
     height: 481px;
     padding: 50px 20px;
     border-radius: 20px;
     background-color: var(--bg-color);
+    @media screen and(min-width: 768px) {
+        left: 30%;
+        transform: translate(-50%, -65%) scale(1);
+    }
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &__button {
         position: absolute;
@@ -51,7 +55,7 @@
         padding-top: 10px;
     }
     &__leave {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.15;
         color: var(--white-color);
         text-align: center;
@@ -83,7 +87,7 @@
         color: var(--text-color);
         padding-top: 25px;
     }
-    &__contact--phone {
+    &__itm--phone {
         margin-bottom: 15px;
     }
 }

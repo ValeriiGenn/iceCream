@@ -1,8 +1,12 @@
 .btntel {
     position: fixed;
     z-index: 5;
-    bottom: 100px;
-    left: 250px;
+    bottom: 50px;
+    left: 50px;
+    @media screen and (min-width: 1200px) {
+        bottom: 100px;
+        left: 250px;
+    }
     &__phone {
         //animation: animate1 190ms infinite 1000ms;
         animation-name: animate1;
