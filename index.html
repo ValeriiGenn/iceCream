@@ -162,11 +162,11 @@
         </section>
 
         <!--секція про-->
-        <section id="about " class="about">
+        <section id="about" class="about">
             <h2 class="visually-hidden">About</h2>
             <div class="container about__container">
                 <h3 class="about__title">tradition and love</h3>
-                <p class="about__preview">how it’s made?</p>
+                <p id="made" class="about__preview">how it’s made?</p>
                 <div class="about__content">
                     <picture class="about__picture">
                         <source srcset="
@@ -229,7 +229,7 @@
             </div>
         </section>
         <!--секція- галерея-->
-        <section class="gallery ">
+        <section class="gallery">
             <div class="gallery__container container ">
                 <h2 class="visually-hidden ">Gallery</h2>
 
@@ -294,7 +294,7 @@
         </section>
 
         <!-- секція контакти-->
-        <section id="contact " class="contacts ">
+        <section id="contact" class="contacts ">
             <h2 class="visually-hidden ">Contacts</h2>
             <div class="container contacts__container ">
                 <ul class="contacts__list ">
@@ -431,6 +431,12 @@
                         </ul>
             </div>
         </section>
+        <!--кнопка kодалки-->
+        <div class="btntel">
+            <button class="btntel__phone" data-kodal-open>
+          <img class="btntel__icon" src="./images/phone.png" />
+        </button>
+        </div>
         <!-- кнопка скрола вверх -->
         <div id="scrollup" onclick="topFunction()" class="button mgray active" style="display: block">
             <div class="i-icon i-chevron-up"></div>
@@ -565,6 +571,51 @@
             </form>
         </div>
     </div>
+     <!--кодальне вікно-->
+    <div class="backdrop is-hidden" data-kodal>
+      <div class="kodal">
+        <button class="kodal__button" data-kodal-close>
+          <svg class="kodal-close" width="20 " height="20 ">
+            <use href="./images/symbol-defs.svg#icon-closem"></use>
+          </svg>
+        </button>
+        <div class="kodal__contacts">
+          <p class="kodal__leave">Ми на звязку з 6.00 до 22.00</p>
+          <ul class="kodal__list">
+            <li class="kodal__item">
+              <div class="kodal__content">
+                <img class="kodal__image" src="/images/pa-min.jpeg" alt="men" />
+                <p class="kodal__name">ВАЛЕРІЙ</p>
+              </div>
+              <div class="kodal__contact">
+                <a class="kodal__contact--phone" href="tel:+380982376021 ">
+                  +(380)98 237 6021</a
+                >
+                <a class="kodal__contact--mail" href="mailto:pvg_erku@ukr.net ">
+                  pvg_erku@ukr.net</a
+                >
+              </div>
+            </li>
+            <li class="kodal__item">
+              <div class="kodal__content">
+                <img class="kodal__image" src="/images/ma-min.jpeg" alt="men" />
+                <p class="kodal__name">НІНА</p>
+              </div>
+              <div class="kodal__contact">
+                <a class="kodal__contact--phone" href="tel:+380960724926 ">
+                  +(380)96 072 4926</a
+                >
+                <a class="kodal__contact--mail" href="mailto:pvg_erku@ukr.net ">
+                  pvg_erku@ukr.net</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/kodal.js"></script>
     <script src="js/scrollup.js "></script>
     <script src="js/modal.js "></script>
     <!--мобільне меню-->
@@ -588,10 +639,10 @@
                 <a href=" " class="mobile-menu__link ">Home</a>
                         </li>
                         <li class="mobile-menu__item ">
-                            <a href="#about " class="mobile-menu__link ">About us</a>
+                            <a href="#about" class="mobile-menu__link ">About us</a>
                         </li>
                         <li class="mobile-menu__item ">
-                            <a href="#about " class="mobile-menu__link ">How it’s made?</a>
+                            <a href="#made" class="mobile-menu__link ">How it’s made?</a>
                         </li>
                         <li class="mobile-menu__item ">
                             <a href="#products " class="mobile-menu__link ">Our products</a>

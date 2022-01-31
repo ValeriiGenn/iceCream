@@ -1,0 +1,42 @@
+.btntel {
+    position: fixed;
+    z-index: 5;
+    bottom: 100px;
+    left: 250px;
+    &__phone {
+        //animation: animate1 190ms infinite 1000ms;
+        animation-name: animate1;
+        animation-duration: 190ms;
+        animation-timing-function: linear;
+        animation-delay: 100ms;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        border: 5px solid var(--cntnt-color);
+        background-color: var(--bg-color);
+        cursor: pointer;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
