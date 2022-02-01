@@ -34,7 +34,7 @@
         margin-right: auto;
         margin-left: auto;
         width: 220px;
-        background: #ffffff;
+        background-color: var(--white-color);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@
     &__list--item-cafe {
         width: 80px;
         height: 22px;
-        background: #f0d1a5;
+        background: var(--bgcf-color);
         border-radius: 4px;
         font-weight: 500;
         font-size: 12px;
@@ -57,12 +57,12 @@
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
-        color: #ffffff;
+        color: var(--white-color);
     }
     &__item--food {
         width: 130px;
         height: 16px;
-        background: #c2e297;
+        background: var(--bgfd-color);
         border-radius: 4px;
         font-size: 12px;
         line-height: 186%;
@@ -70,7 +70,7 @@
         align-items: center;
         justify-content: center;
         letter-spacing: 0.04em;
-        color: #ffffff;
+        color: var(--white-color);
         @media screen and (min-width: 768px) {
             height: 22px;
         }
@@ -84,7 +84,7 @@
         font-size: 12px;
         line-height: 186%;
         letter-spacing: 0.04em;
-        color: #000000;
+        color: var(--black-color);
         @media screen and (min-width: 768px) {
             margin-top: 30px;
             margin-bottom: 14px;
@@ -103,7 +103,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        color: #907e82;
+        color: var(--abtxt-color);
         @media screen and (min-width: 768px) {
             margin-bottom: 32px;
             width: 160px;
@@ -120,8 +120,8 @@
     &__timetable {
         padding-top: 25px;
         padding-bottom: 25px;
-        border-top: 1px solid #e1e1e1;
-        border-bottom: 1px solid #e1e1e1;
+        border-top: 1px solid var(--brdr-color);
+        border-bottom: 1px solid var(--brdr-color);
         margin-bottom: 25px;
         @media screen and (min-width: 768px) {
             padding-top: 30px;
@@ -146,7 +146,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
-        color: #000000;
+        color: var(--black-color);
         @media screen and (min-width: 768px) {
             font-size: 14px;
         }
@@ -158,7 +158,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
-        color: #ffa5ba;
+        color: var(--abttl-color);
         @media screen and (min-width: 768px) {
             font-size: 14px;
         }
@@ -167,7 +167,7 @@
         }
     }
     &__contact {
-        color: #907e82;
+        color: var(--abtxt-color);
     }
     &__contact--link {
         margin-top: 25px;
@@ -177,7 +177,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        color: #907e82;
+        color: var(--abtxt-color);
         @media screen and (min-width: 768px) {
             font-size: 14px;
             line-height: 183%;
@@ -219,8 +219,8 @@
         line-height: 21px;
         align-items: center;
         text-align: center;
-        color: #ffffff;
-        background-color: #d41342;
+        color: var(--white-color);
+        background-color: var(--bgbtn-color);
         border: none;
     }
     &__btn--locicon {
@@ -238,8 +238,8 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
-        color: #d41443;
-        background-color: #fff;
+        color: var(--abprvw-color);
+        background-color: var(--white-color);
         border: none;
         @media screen and (min-width: 768px) {
             margin: 0 0 0 15px;

@@ -44,6 +44,10 @@ body {
   --bgheher-color: #ffb8ca;
   --ttlhh-color: #ffffff;
   --bgfcs-color: #ecebeb;
+  --bgcf-color: #f0d1a5;
+  --bgfd-color: #c2e297;
+  --brdr-color: #e1e1e1;
+  --bgbtn-color: #d41342;
 }
 
 .visually-hidden {
@@ -2587,7 +2591,7 @@ span.price {
   margin-right: auto;
   margin-left: auto;
   width: 220px;
-  background: #ffffff;
+  background-color: var(--white-color);
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -2627,7 +2631,7 @@ span.price {
 .contacts__list--item-cafe {
   width: 80px;
   height: 22px;
-  background: #f0d1a5;
+  background: var(--bgcf-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 12px;
@@ -2637,13 +2641,13 @@ span.price {
           align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .contacts__item--food {
   width: 130px;
   height: 16px;
-  background: #c2e297;
+  background: var(--bgfd-color);
   border-radius: 4px;
   font-size: 12px;
   line-height: 186%;
@@ -2657,7 +2661,7 @@ span.price {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2675,7 +2679,7 @@ span.price {
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: var(--black-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2701,7 +2705,7 @@ span.price {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--abtxt-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2725,8 +2729,8 @@ span.price {
 .contacts__timetable {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid var(--brdr-color);
+  border-bottom: 1px solid var(--brdr-color);
   margin-bottom: 25px;
 }
 
@@ -2758,7 +2762,7 @@ span.price {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #000000;
+  color: var(--black-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2777,7 +2781,7 @@ span.price {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ffa5ba;
+  color: var(--abttl-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2793,7 +2797,7 @@ span.price {
 }
 
 .contacts__contact {
-  color: #907e82;
+  color: var(--abtxt-color);
 }
 
 .contacts__contact--link {
@@ -2804,7 +2808,7 @@ span.price {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #907e82;
+  color: var(--abtxt-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -2873,8 +2877,8 @@ span.price {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #ffffff;
-  background-color: #d41342;
+  color: var(--white-color);
+  background-color: var(--bgbtn-color);
   border: none;
 }
 
@@ -2896,8 +2900,8 @@ span.price {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  color: #d41443;
-  background-color: #fff;
+  color: var(--abprvw-color);
+  background-color: var(--white-color);
   border: none;
 }
 
