@@ -8,7 +8,7 @@
         padding: 0 0 139px;
     }
     padding: 20px 0 97px;
-    background-color: #fff5f6;
+    background-color: var(--advbg-color);
     width: 100%;
     &__container {
         @media screen and (min-width: 768px) {
@@ -61,7 +61,7 @@
         line-height: 1;
         letter-spacing: 0.04;
         margin-bottom: 13px;
-        color: rgba(212, 20, 67, 1);
+        color: var(--cntnt-color);
     }
     &__signature {
         @media screen and (min-width: 768px) {
@@ -79,7 +79,7 @@
         font-weight: bold;
         font-size: 12px;
         line-height: 170%;
-        color: #000000;
+        color: var(--black-color);
     }
 }
 
