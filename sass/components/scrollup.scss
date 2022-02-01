@@ -1,7 +1,7 @@
 #scrollup.mgray {
-    background: rgba(88%, 47%, 57%, 0.6);
+    background: var(--bgscrll-color);
     border-radius: 0;
-    color: #fff;
+    color: var(--white-color);
 }
 
 #scrollup {
