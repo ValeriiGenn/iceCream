@@ -27,7 +27,7 @@
         position: relative;
         padding: 43px 50px 20px;
         z-index: -2;
-        background-color: #fafafa;
+        background-color: var(--bgsgntr-color);
     }
     &__signature::before {
         position: absolute;
@@ -46,7 +46,7 @@
         font-size: 12px;
         line-height: 255%;
         text-align: center;
-        color: #000000;
+        color: var(--black-color);
         background-image: repeating-linear-gradient( 180deg, transparent 0, transparent 28px, #e1e1e1 28px, #e1e1e1 30px);
         @media screen and (min-width: 768px) {
             font-size: 14px;
