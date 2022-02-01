@@ -48,6 +48,7 @@ body {
   --bgfd-color: #c2e297;
   --brdr-color: #e1e1e1;
   --bgbtn-color: #d41342;
+  --bglnk-color: #fea5bb;
 }
 
 .visually-hidden {
@@ -3236,7 +3237,7 @@ span.price {
 }
 
 .footer {
-  background: #fff5f6;
+  background: var(--advbg-color);
   position: relative;
   padding-bottom: 25px;
 }
@@ -3282,7 +3283,7 @@ span.price {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--abttl-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -3321,7 +3322,7 @@ span.price {
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--abprvw-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -3381,11 +3382,11 @@ span.price {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #fea5bb;
+  background-color: var(--bglnk-color);
 }
 
 .footer__network--link:hover, .footer__network--link:focus {
-  background-color: #d41443;
+  background-color: var(--abprvw-color);
 }
 
 .footer__network--link-icon {
@@ -3406,7 +3407,7 @@ span.price {
   font-size: 12px;
   line-height: 186%;
   text-align: right;
-  color: #000000;
+  color: var(--black-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -3416,7 +3417,7 @@ span.price {
 }
 
 .footer__contact-tel {
-  color: #d41443;
+  color: var(--abprvw-color);
   text-decoration: none;
 }
 
@@ -3428,7 +3429,7 @@ span.price {
   content: "";
   width: 100%;
   height: 0.5px;
-  background-color: #e1e1e1;
+  background-color: var(--brdr-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -3449,7 +3450,7 @@ span.price {
   font-size: 14px;
   line-height: 152%;
   text-align: center;
-  color: #907e82;
+  color: var(--abtxt-color);
 }
 
 @media screen and (min-width: 768px) {
