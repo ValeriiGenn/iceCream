@@ -41,6 +41,9 @@ body {
   --abtxt-color: #907e82;
   --white-color: #ffffff;
   --advbg-color: #fff5f6;
+  --bgheher-color: #ffb8ca;
+  --ttlhh-color: #ffffff;
+  --bgfcs-color: #ecebeb;
 }
 
 .visually-hidden {
@@ -648,32 +651,13 @@ span.price {
 }
 
 .hero-header {
-  background-color: #ffb8ca;
+  background-color: var(--bgheher-color);
   background-size: 346px;
   background-repeat: no-repeat;
   padding-top: 6px;
   height: 502px;
   position: relative;
   overflow: hidden;
-  /*&__number-tvthree::after {
-        z-index: -1;
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        top: 122px;
-        right: 26px;
-        background-image: url(../images/Elwit1m.svg);
-        background-repeat: no-repeat;
-        @media screen and(min-width: 1200px) {
-            top: 228px;
-            right: 80px;
-            width: 30px;
-            height: 30px;
-            background-size: 30px;
-        }
-}*/
 }
 
 @media screen and (min-width: 768px) {
@@ -786,7 +770,7 @@ span.price {
   display: -ms-flexbox;
   display: flex;
   border: none;
-  background-color: #ffb8ca;
+  background-color: var(--bgheher-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -818,7 +802,7 @@ span.price {
   line-height: 25px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -834,7 +818,7 @@ span.price {
   line-height: 90.5%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--abprvw-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -874,7 +858,7 @@ span.price {
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--abprvw-color);
   }
 }
 
@@ -931,7 +915,7 @@ span.price {
   line-height: 10px;
   text-align: right;
   text-transform: none;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1000,13 +984,13 @@ span.price {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero-header__nav--link:hover,
 .hero-header__nav :focus {
-  color: #d41443;
-  background-color: #ffb8ca;
+  color: var(--abprvw-color);
+  background-color: var(--bgheher-color);
 }
 
 .hero-header__navbtn {
@@ -1018,7 +1002,7 @@ span.price {
     margin-left: 30px;
     width: 160px;
     height: 44px;
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 22px;
     border: none;
     font-family: DM Sans;
@@ -1034,7 +1018,7 @@ span.price {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #d41443;
+    color: var(--abprvw-color);
   }
 }
 
@@ -1048,8 +1032,8 @@ span.price {
 
 .hero-header__navbtn :hover,
 .hero-header :focus {
-  color: #d41443;
-  background-color: #ecebeb;
+  color: var(--abprvw-color);
+  background-color: var(--bgfcs-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1087,8 +1071,8 @@ span.price {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #d41443;
-  color: #ffffff;
+  background-color: var(--abprvw-color);
+  color: var(--white-color);
   margin-right: 8px;
 }
 
@@ -1120,8 +1104,8 @@ span.price {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: var(--white-color);
+  color: var(--abprvw-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1193,7 +1177,7 @@ span.price {
     height: 18px;
     border-radius: 9px;
     border: none;
-    background-color: #fff;
+    background-color: var(--white-color);
   }
 }
 
@@ -1209,7 +1193,7 @@ span.price {
   .hero-header__wrap--button-icon {
     width: 8px;
     height: 8px;
-    fill: #d41443;
+    fill: var(--abprvw-color);
   }
   .hero-header__wrap::after {
     content: "";
@@ -1240,7 +1224,7 @@ span.price {
     font-size: 8px;
     line-height: 150%;
     margin-bottom: 7px;
-    color: #ffffff;
+    color: var(--white-color);
   }
 }
 
